@@ -18,6 +18,20 @@ from src.model import compute_strengths
 ROOT = Path(__file__).resolve().parent.parent
 TEAMS = ROOT / "data" / "exports" / "team_stats.json"
 KO = ROOT / "data" / "exports" / "knockout_matches.json"
+MODEL_INPUTS = ROOT / "data" / "exports" / "model_inputs.json"
+
+
+def load_model_inputs():
+    """Elo prior + xG form from the enrichment dataset, if present."""
+    if not MODEL_INPUTS.exists():
+        return None, None
+    rows = json.loads(MODEL_INPUTS.read_text())
+    elo = {r["team"]: r["elo"] for r in rows if r.get("elo")}
+    xg = {
+        r["team"]: {"for": r["xg_for"], "against": r["xg_against"], "games": r["xg_games"]}
+        for r in rows if r.get("xg_games")
+    }
+    return elo, xg
 
 st.set_page_config(page_title="WC2026 Knockouts", page_icon="🏆", layout="wide")
 
@@ -60,7 +74,8 @@ def load_data():
 
 @st.cache_data
 def compute(_teams, _ko):
-    strengths, avg = compute_strengths(_teams)
+    elo, xg = load_model_inputs()
+    strengths, avg = compute_strengths(_teams, elo=elo, xg=xg)
     sim = simulate(_ko, strengths, avg, n=20000)
     probs = current_match_probs(_ko, strengths, avg)
     return strengths, avg, sim, probs

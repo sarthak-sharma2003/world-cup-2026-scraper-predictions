@@ -15,6 +15,21 @@ import streamlit as st
 from src.model import compute_strengths, predict
 
 EXPORT = Path(__file__).parent / "data" / "exports" / "team_stats.json"
+MODEL_INPUTS = Path(__file__).parent / "data" / "exports" / "model_inputs.json"
+
+
+def load_model_inputs():
+    """Elo prior + xG form from the enrichment dataset, if present."""
+    if not MODEL_INPUTS.exists():
+        return None, None
+    mrows = json.loads(MODEL_INPUTS.read_text())
+    elo = {r["team"]: r["elo"] for r in mrows if r.get("elo")}
+    xg = {
+        r["team"]: {"for": r["xg_for"], "against": r["xg_against"], "games": r["xg_games"]}
+        for r in mrows if r.get("xg_games")
+    }
+    return elo, xg
+
 
 st.set_page_config(page_title="World Cup 2026 Predictions", page_icon="⚽", layout="wide")
 st.title("⚽ World Cup 2026 — Live Prediction Dashboard")
@@ -51,7 +66,8 @@ with left:
 
 with right:
     st.subheader("Match predictor")
-    strengths, league_avg = compute_strengths(rows)
+    elo, xg = load_model_inputs()
+    strengths, league_avg = compute_strengths(rows, elo=elo, xg=xg)
     teams = sorted(strengths.keys())
     home = st.selectbox("Team A", teams, index=teams.index("Brazil") if "Brazil" in teams else 0)
     away = st.selectbox("Team B", teams, index=1)
@@ -71,6 +87,6 @@ with right:
             f"{p['exp_away_goals']:.2f} {away}**"
         )
         st.caption(
-            "Simplified Poisson model on group-stage data (small sample). "
-            "Dixon-Coles upgrade planned."
+            "Poisson model: pre-tournament Elo prior blended with tournament xG form "
+            "(Elo weighted 0.6). Draw shown here; knockouts use the two-outcome model."
         )

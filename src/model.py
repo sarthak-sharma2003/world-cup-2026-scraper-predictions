@@ -21,33 +21,68 @@ class TeamStrength:
 
 
 def compute_strengths(
-    rows: list[dict], prior_games: float = 2.0
+    rows: list[dict],
+    prior_games: float = 2.0,
+    elo: dict[str, float] | None = None,
+    xg: dict[str, dict] | None = None,
+    elo_weight: float = 0.6,
+    elo_scale: float = 300.0,
+    elo_alpha: float = 0.85,
 ) -> tuple[dict[str, TeamStrength], float]:
-    """Attack/defense strengths with Bayesian shrinkage.
+    """Attack/defense strengths blending a pre-tournament Elo prior with tournament form.
 
-    `prior_games` adds that many pseudo-games at the league average, pulling
-    tiny-sample extremes (e.g. "conceded 0 in 3 games") toward the mean so we
-    don't emit absurd 0%/100% predictions off a 3-game group stage.
+    - Form: expected goals (xG) for/against per game when `xg` is supplied (chance
+      quality, robust to lucky finishing), otherwise raw goals from `rows`. Bayesian
+      shrinkage (`prior_games`) tames tiny-sample extremes.
+    - Elo: a per-team pre-tournament strength prior. Off a 3-8 game tournament Elo is
+      the more reliable signal, so it is weighted higher (`elo_weight`), but form still
+      moves the number — a favourite playing badly is marked down, an overperformer up.
+
+    Combined geometrically in multiplicative strength space:
+        strength = form^(1 - elo_weight) * elo^elo_weight
+    Returns (strengths, base_scoring_rate). With no `elo`/`xg` this is pure goals form.
     """
-    total_gf = sum((r.get("goals_for") or 0) for r in rows)
-    total_games = sum((r.get("games") or 0) for r in rows)
-    league_avg = (total_gf / total_games) if total_games else 1.0
+    def _rate_source():
+        if xg:
+            rates = [v["for"] / v["games"] for v in xg.values() if v.get("games")]
+            return (sum(rates) / len(rates)) if rates else 1.0
+        total_gf = sum((r.get("goals_for") or 0) for r in rows)
+        total_games = sum((r.get("games") or 0) for r in rows)
+        return (total_gf / total_games) if total_games else 1.0
+
+    league_avg = _rate_source()
+
+    elo_mean = 0.0
+    if elo:
+        vals = [elo[r.get("canonical_team") or r.get("team")]
+                for r in rows if (r.get("canonical_team") or r.get("team")) in elo]
+        elo_mean = sum(vals) / len(vals) if vals else 0.0
 
     strengths: dict[str, TeamStrength] = {}
     for r in rows:
-        games = r.get("games") or 0
-        if games == 0:
-            continue
         name = r.get("canonical_team") or r.get("team")
-        gf = (r.get("goals_for") or 0) + prior_games * league_avg
-        ga = (r.get("goals_against") or 0) + prior_games * league_avg
-        adj_games = games + prior_games
-        strengths[name] = TeamStrength(
-            team=name,
-            attack=(gf / adj_games) / league_avg if league_avg else 1.0,
-            defense=(ga / adj_games) / league_avg if league_avg else 1.0,
-            games=games,
-        )
+
+        # form (xG preferred, goals fallback), with shrinkage toward the mean
+        if xg and name in xg and xg[name].get("games"):
+            g = xg[name]["games"]
+            f_for, f_against = xg[name]["for"], xg[name]["against"]
+        else:
+            g = r.get("games") or 0
+            f_for, f_against = r.get("goals_for") or 0, r.get("goals_against") or 0
+        if g == 0:
+            continue
+        adj = g + prior_games
+        form_attack = ((f_for + prior_games * league_avg) / adj) / league_avg if league_avg else 1.0
+        form_defense = ((f_against + prior_games * league_avg) / adj) / league_avg if league_avg else 1.0
+
+        attack, defense = form_attack, form_defense
+        if elo and name in elo:
+            z = (elo[name] - elo_mean) / elo_scale
+            w = elo_weight
+            attack = form_attack ** (1 - w) * math.exp(elo_alpha * z) ** w
+            defense = form_defense ** (1 - w) * math.exp(-elo_alpha * z) ** w
+
+        strengths[name] = TeamStrength(team=name, attack=attack, defense=defense, games=g)
     return strengths, league_avg
 
 

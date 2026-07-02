@@ -63,6 +63,22 @@ double-sided bracket with advancement probabilities; click any match for detail)
 - Graceful degradation: bad rows are logged and skipped, not fatal; each run is recorded in `scrape_runs`.
 - Config-driven selectors keep the codebase stable when a site tweaks its markup.
 
+## Data sources & credits
+- **Wikipedia** (`2026 FIFA World Cup`) — primary, self-scraped: group standings + full
+  knockout bracket. robots.txt-compliant.
+- **[FIFA World Cup 2026 Dataset](https://github.com/mominullptr/FIFA-World-Cup-2026-Dataset)**
+  by *mominullptr* (also on Kaggle / Hugging Face) — enrichment: pre-tournament Elo & FIFA
+  ranking prior, and per-match xG used as the form signal. Fetched from its public raw CSVs
+  and **cross-validated against the Wikipedia scrape** (name reconciliation, e.g.
+  "Congo DR" ⇄ "DR Congo"). Used under attribution; see the dataset's CITATION.cff.
+
+## Prediction model
+Poisson goal model where each team's attack/defense strength blends, geometrically:
+a **pre-tournament Elo prior** with **tournament xG form** (`strength = form^0.4 · elo^0.6`).
+Elo fixes ordering (pedigree), xG form adjusts for who's actually playing well, and using xG
+instead of raw goals avoids rewarding lucky finishing. Knockouts use a two-outcome variant
+(no draws; level games split 50/50 for ET/pens) plus a 20k-run Monte Carlo for championship odds.
+
 ## Status
 Working: static scraper (group standings + knockout bracket) + validation + storage +
 scheduled workflow + Streamlit dashboard (standings, match predictor, live knockout bracket

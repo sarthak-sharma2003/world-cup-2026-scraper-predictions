@@ -80,6 +80,17 @@ CREATE TABLE IF NOT EXISTS knockout_matches (
     scraped_at  TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS model_inputs (
+    team        TEXT PRIMARY KEY,
+    elo         INTEGER,
+    fifa_rank   INTEGER,
+    xg_for      REAL,
+    xg_against  REAL,
+    xg_games    INTEGER,
+    source      TEXT NOT NULL,
+    scraped_at  TEXT NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS scrape_runs (
     id           INTEGER PRIMARY KEY AUTOINCREMENT,
     source       TEXT NOT NULL,
@@ -173,6 +184,28 @@ def upsert_knockout(conn: sqlite3.Connection, matches: list[dict], source: str) 
         )
     conn.commit()
     return len(matches)
+
+
+_MI_COLS = ("team", "elo", "fifa_rank", "xg_for", "xg_against", "xg_games")
+
+
+def upsert_model_inputs(conn: sqlite3.Connection, rows: list[dict], source: str) -> int:
+    scraped_at = _now()
+    placeholders = ", ".join(f":{c}" for c in _MI_COLS) + ", :source, :scraped_at"
+    updates = ", ".join(f"{c}=excluded.{c}" for c in _MI_COLS if c != "team")
+    for r in rows:
+        params = {c: r.get(c) for c in _MI_COLS}
+        params["source"] = source
+        params["scraped_at"] = scraped_at
+        conn.execute(
+            f"""INSERT INTO model_inputs ({", ".join(_MI_COLS)}, source, scraped_at)
+                VALUES ({placeholders})
+                ON CONFLICT(team) DO UPDATE SET {updates}, source=excluded.source,
+                    scraped_at=excluded.scraped_at""",
+            params,
+        )
+    conn.commit()
+    return len(rows)
 
 
 def log_run(

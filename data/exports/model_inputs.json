@@ -1,0 +1,492 @@
+[
+  {
+    "team": "Mexico",
+    "elo": 1810,
+    "fifa_rank": 14,
+    "xg_for": 5.75,
+    "xg_against": 2.93,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "South Africa",
+    "elo": 1620,
+    "fifa_rank": 60,
+    "xg_for": 3.0599999999999996,
+    "xg_against": 5.9,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "South Korea",
+    "elo": 1800,
+    "fifa_rank": 22,
+    "xg_for": 3.42,
+    "xg_against": 4.0,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Czech Republic",
+    "elo": 1740,
+    "fifa_rank": 40,
+    "xg_for": 3.5700000000000003,
+    "xg_against": 3.8699999999999997,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Canada",
+    "elo": 1795,
+    "fifa_rank": 33,
+    "xg_for": 7.84,
+    "xg_against": 2.04,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Bosnia",
+    "elo": 1645,
+    "fifa_rank": 64,
+    "xg_for": 3.59,
+    "xg_against": 5.67,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Qatar",
+    "elo": 1600,
+    "fifa_rank": 56,
+    "xg_for": 1.95,
+    "xg_against": 6.84,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Switzerland",
+    "elo": 1860,
+    "fifa_rank": 19,
+    "xg_for": 4.7,
+    "xg_against": 3.0100000000000002,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Brazil",
+    "elo": 2030,
+    "fifa_rank": 6,
+    "xg_for": 6.65,
+    "xg_against": 2.68,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Morocco",
+    "elo": 1920,
+    "fifa_rank": 7,
+    "xg_for": 5.390000000000001,
+    "xg_against": 3.94,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Haiti",
+    "elo": 1530,
+    "fifa_rank": 83,
+    "xg_for": 3.27,
+    "xg_against": 4.16,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Scotland",
+    "elo": 1720,
+    "fifa_rank": 39,
+    "xg_for": 2.0700000000000003,
+    "xg_against": 3.97,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "United States",
+    "elo": 1850,
+    "fifa_rank": 17,
+    "xg_for": 6.34,
+    "xg_against": 3.0700000000000003,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Paraguay",
+    "elo": 1725,
+    "fifa_rank": 54,
+    "xg_for": 2.15,
+    "xg_against": 4.359999999999999,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Australia",
+    "elo": 1790,
+    "fifa_rank": 27,
+    "xg_for": 2.2800000000000002,
+    "xg_against": 2.48,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Turkey",
+    "elo": 1780,
+    "fifa_rank": 26,
+    "xg_for": 2.74,
+    "xg_against": 3.23,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Germany",
+    "elo": 1970,
+    "fifa_rank": 10,
+    "xg_for": 8.940000000000001,
+    "xg_against": 2.86,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Cura\u00e7ao",
+    "elo": 1520,
+    "fifa_rank": 82,
+    "xg_for": 0.8400000000000001,
+    "xg_against": 8.42,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Ivory Coast",
+    "elo": 1750,
+    "fifa_rank": 38,
+    "xg_for": 4.65,
+    "xg_against": 5.14,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Ecuador",
+    "elo": 1870,
+    "fifa_rank": 23,
+    "xg_for": 4.880000000000001,
+    "xg_against": 3.7500000000000004,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Netherlands",
+    "elo": 1980,
+    "fifa_rank": 8,
+    "xg_for": 7.780000000000001,
+    "xg_against": 4.720000000000001,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Japan",
+    "elo": 1880,
+    "fifa_rank": 18,
+    "xg_for": 6.290000000000001,
+    "xg_against": 4.9399999999999995,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Sweden",
+    "elo": 1815,
+    "fifa_rank": 25,
+    "xg_for": 5.62,
+    "xg_against": 8.52,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Tunisia",
+    "elo": 1710,
+    "fifa_rank": 45,
+    "xg_for": 1.75,
+    "xg_against": 8.39,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Belgium",
+    "elo": 1950,
+    "fifa_rank": 9,
+    "xg_for": 8.02,
+    "xg_against": 5.800000000000001,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Egypt",
+    "elo": 1730,
+    "fifa_rank": 36,
+    "xg_for": 4.12,
+    "xg_against": 3.05,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Iran",
+    "elo": 1820,
+    "fifa_rank": 20,
+    "xg_for": 3.42,
+    "xg_against": 3.5,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "New Zealand",
+    "elo": 1510,
+    "fifa_rank": 85,
+    "xg_for": 2.23,
+    "xg_against": 7.279999999999999,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Spain",
+    "elo": 2120,
+    "fifa_rank": 2,
+    "xg_for": 6.779999999999999,
+    "xg_against": 1.38,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Cape Verde",
+    "elo": 1640,
+    "fifa_rank": 67,
+    "xg_for": 1.87,
+    "xg_against": 4.18,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Saudi Arabia",
+    "elo": 1660,
+    "fifa_rank": 58,
+    "xg_for": 1.48,
+    "xg_against": 5.46,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Uruguay",
+    "elo": 1960,
+    "fifa_rank": 16,
+    "xg_for": 4.19,
+    "xg_against": 3.3000000000000003,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "France",
+    "elo": 2100,
+    "fifa_rank": 3,
+    "xg_for": 8.780000000000001,
+    "xg_against": 3.4699999999999998,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Senegal",
+    "elo": 1840,
+    "fifa_rank": 15,
+    "xg_for": 9.120000000000001,
+    "xg_against": 6.27,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Iraq",
+    "elo": 1630,
+    "fifa_rank": 55,
+    "xg_for": 1.27,
+    "xg_against": 8.07,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Norway",
+    "elo": 1775,
+    "fifa_rank": 44,
+    "xg_for": 8.12,
+    "xg_against": 4.27,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Argentina",
+    "elo": 2150,
+    "fifa_rank": 1,
+    "xg_for": 6.56,
+    "xg_against": 1.73,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Algeria",
+    "elo": 1760,
+    "fifa_rank": 28,
+    "xg_for": 3.96,
+    "xg_against": 4.97,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Austria",
+    "elo": 1830,
+    "fifa_rank": 24,
+    "xg_for": 3.97,
+    "xg_against": 4.28,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Jordan",
+    "elo": 1610,
+    "fifa_rank": 63,
+    "xg_for": 2.52,
+    "xg_against": 6.029999999999999,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Portugal",
+    "elo": 2010,
+    "fifa_rank": 5,
+    "xg_for": 6.050000000000001,
+    "xg_against": 3.19,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Congo DR",
+    "elo": 1670,
+    "fifa_rank": 61,
+    "xg_for": 4.84,
+    "xg_against": 5.640000000000001,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:34:43.524267+00:00"
+  },
+  {
+    "team": "Uzbekistan",
+    "elo": 1650,
+    "fifa_rank": 50,
+    "xg_for": 1.5699999999999998,
+    "xg_against": 7.99,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Colombia",
+    "elo": 1990,
+    "fifa_rank": 13,
+    "xg_for": 5.34,
+    "xg_against": 2.26,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "England",
+    "elo": 2050,
+    "fifa_rank": 4,
+    "xg_for": 7.47,
+    "xg_against": 3.9799999999999995,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Croatia",
+    "elo": 1940,
+    "fifa_rank": 11,
+    "xg_for": 3.54,
+    "xg_against": 4.08,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Ghana",
+    "elo": 1690,
+    "fifa_rank": 49,
+    "xg_for": 2.9299999999999997,
+    "xg_against": 2.29,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "Panama",
+    "elo": 1680,
+    "fifa_rank": 34,
+    "xg_for": 1.8599999999999999,
+    "xg_against": 4.17,
+    "xg_games": 3,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  },
+  {
+    "team": "DR Congo",
+    "elo": 1670,
+    "fifa_rank": 61,
+    "xg_for": 4.84,
+    "xg_against": 5.640000000000001,
+    "xg_games": 4,
+    "source": "wc2026_dataset",
+    "scraped_at": "2026-07-02T20:43:56.437761+00:00"
+  }
+]

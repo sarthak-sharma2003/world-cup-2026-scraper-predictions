@@ -44,6 +44,18 @@ sources:
               goals_for: "GF"
               goals_against: "GA"
 
+  # Enrichment + cross-validation source: community FIFA WC2026 dataset (public
+  # repo, cited in README). Supplies the pre-tournament Elo/FIFA-rank prior and
+  # per-match xG that our own Wikipedia scrape doesn't carry.
+  wc2026_dataset:
+    name: "FIFA WC2026 Dataset (mominullptr)"
+    base_url: "https://raw.githubusercontent.com/mominullptr/FIFA-World-Cup-2026-Dataset/main"
+    min_delay_seconds: 1.0
+    respect_robots: false   # raw.githubusercontent serves a blanket-deny robots; this is a
+                            # public data file we were explicitly pointed to and cite
+    teams_file: "/teams.csv"
+    matches_file: "/matches_detailed.csv"
+
   # FBref sits behind a Cloudflare bot challenge, so it is NOT scraped directly
   # (that would require anti-bot evasion, against our compliance stance). It is
   # instead handled via an Apify actor — see src/scraper/apify_compare.py (planned).

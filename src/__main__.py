@@ -9,6 +9,7 @@ import logging
 
 from . import storage, validator
 from .config import load_config
+from .scraper.dataset import DatasetScraper, cross_validate
 from .scraper.knockout import KnockoutScraper
 from .scraper.wikipedia_static import WikipediaScraper
 
@@ -70,6 +71,21 @@ def run() -> None:
         status="ok" if knockouts else "empty",
     )
     log.info("knockout matches stored=%d", len(knockouts))
+
+    # Model-input enrichment (Elo prior + xG form) from the community dataset
+    ds_cfg = cfg["sources"].get("wc2026_dataset")
+    if ds_cfg:
+        ds_started = storage._now()
+        model_inputs = DatasetScraper(ds_cfg, defaults).scrape()
+        if model_inputs:
+            cross_validate(model_inputs, [r["canonical_team"] for r in clean])
+            storage.upsert_model_inputs(conn, model_inputs, source="wc2026_dataset")
+            storage.export_table(conn, "model_inputs")
+        storage.log_run(
+            conn, "dataset", ds_started, records=len(model_inputs), failures=0,
+            status="ok" if model_inputs else "empty",
+        )
+        log.info("model inputs (elo+xg) stored=%d", len(model_inputs))
 
 
 if __name__ == "__main__":
