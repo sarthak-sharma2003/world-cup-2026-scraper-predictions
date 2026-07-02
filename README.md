@@ -58,6 +58,17 @@ streamlit run dashboard.py   # then open http://localhost:8501
 Pages: **Home** (group standings + match predictor) and **Knockouts** (live
 double-sided bracket with advancement probabilities; click any match for detail).
 
+## Deploy (free public URL)
+Hosted on **Streamlit Community Cloud** (free), which serves from this repo and
+auto-redeploys whenever the scheduled scrape commits fresh data:
+1. Go to [share.streamlit.io](https://share.streamlit.io) → sign in with GitHub.
+2. **Create app → Deploy a public app from GitHub.**
+3. Repo `sarthak-sharma2003/world-cup-2026-scraper-predictions`, branch `main`,
+   main file `dashboard.py`.
+4. **Deploy.** Pick a subdomain → your public `*.streamlit.app` URL.
+
+No secrets/config needed. Runtime deps: `streamlit`, `pandas` (see requirements.txt).
+
 ## Reliability & compliance
 - Polite by default: real User-Agent, per-source rate limits, exponential backoff, robots.txt checks.
 - Graceful degradation: bad rows are logged and skipped, not fatal; each run is recorded in `scrape_runs`.
