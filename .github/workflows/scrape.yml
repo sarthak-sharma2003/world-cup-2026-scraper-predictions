@@ -1,0 +1,45 @@
+name: scheduled-scrape
+
+# The public run history of this workflow IS the "stability against site changes"
+# proof for the Mindrift application: a column of green checkmarks from repeated
+# scheduled runs against live sites.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours (UTC)
+  workflow_dispatch:          # allow manual runs from the Actions tab
+
+permissions:
+  contents: write             # needed to commit refreshed exports back to the repo
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: pytest -q
+
+      - name: Run scraper pipeline
+        run: python -m src
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/exports
+          if git diff --staged --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore: scheduled data refresh [skip ci]"
+            git push
+          fi

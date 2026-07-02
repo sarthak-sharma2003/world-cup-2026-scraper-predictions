@@ -1,0 +1,53 @@
+# Config-driven scraper sources.
+#
+# The whole point of this file (for the Mindrift "stability against site changes"
+# story): when a site tweaks its markup, you fix ONE line here — not the code.
+#
+# Field maps use FBref's `data-stat` attributes, which are far more stable than
+# CSS positions or class names. To find a table's id: open the page, View Source,
+# and search for `<table ... id="...">`. Some FBref tables are wrapped in HTML
+# comments to deter scrapers — the parser handles that automatically.
+
+defaults:
+  user_agent: "WC2026-PredictionBot/1.0 (portfolio project; contact: sarthaksunny23@gmail.com)"
+  min_delay_seconds: 3.0
+  max_retries: 4
+  backoff_base_seconds: 2.0
+  timeout_seconds: 30.0
+  respect_robots: true
+
+sources:
+  # Primary static-HTML source (BeautifulSoup). Wikipedia's robots.txt permits
+  # article fetches; tables are clean static HTML. Parser selects tables by a
+  # header signature and maps columns by header label (both site-change resilient).
+  wikipedia:
+    name: Wikipedia
+    base_url: "https://en.wikipedia.org"
+    min_delay_seconds: 2.0
+    respect_robots: true
+    pages:
+      wc2026_group_standings:
+        path: "/wiki/2026_FIFA_World_Cup"
+        tables:
+          - record_type: "team_stats"
+            # Any wikitable whose header row contains ALL of these is treated as a
+            # group-standings table (12 groups + the third-placed ranking table).
+            select_by_headers: ["Pld", "W", "D", "L", "GF", "GA", "Pts"]
+            team_column: "Team"        # matched by prefix (real header is "Teamvte")
+            fields:                     # our_field: wikitable_header_label
+              games: "Pld"
+              wins: "W"
+              draws: "D"
+              losses: "L"
+              goals_for: "GF"
+              goals_against: "GA"
+
+  # FBref sits behind a Cloudflare bot challenge, so it is NOT scraped directly
+  # (that would require anti-bot evasion, against our compliance stance). It is
+  # instead handled via an Apify actor — see src/scraper/apify_compare.py (planned).
+  # Kept here for documentation; the pipeline does not fetch it directly.
+  fbref:
+    name: FBref (via Apify)
+    base_url: "https://fbref.com"
+    handled_by: apify
+    respect_robots: true
