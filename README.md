@@ -49,6 +49,12 @@ python -m src        # run the scrape → validate → store → export pipeline
 
 Outputs land in `data/exports/` (`team_stats.json`, `team_stats.csv`).
 
+Launch the dashboard:
+
+```bash
+streamlit run dashboard.py   # then open http://localhost:8501
+```
+
 ## Reliability & compliance
 - Polite by default: real User-Agent, per-source rate limits, exponential backoff, robots.txt checks.
 - Graceful degradation: bad rows are logged and skipped, not fatal; each run is recorded in `scrape_runs`.
