@@ -58,6 +58,28 @@ CREATE TABLE IF NOT EXISTS predictions (
     created_at     TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS knockout_matches (
+    match_no    INTEGER PRIMARY KEY,
+    round       TEXT,
+    round_idx   INTEGER,
+    match_date  TEXT,
+    venue       TEXT,
+    home_ref    TEXT,
+    away_ref    TEXT,
+    home_team   TEXT,
+    away_team   TEXT,
+    home_score  INTEGER,
+    away_score  INTEGER,
+    home_pens   INTEGER,
+    away_pens   INTEGER,
+    winner      TEXT,
+    home_from   INTEGER,
+    away_from   INTEGER,
+    status      TEXT,
+    source      TEXT NOT NULL,
+    scraped_at  TEXT NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS scrape_runs (
     id           INTEGER PRIMARY KEY AUTOINCREMENT,
     source       TEXT NOT NULL,
@@ -125,6 +147,32 @@ def upsert_team_stats(conn: sqlite3.Connection, records: list[dict], source: str
         stored += 1
     conn.commit()
     return stored
+
+
+_KO_COLS = (
+    "match_no", "round", "round_idx", "match_date", "venue",
+    "home_ref", "away_ref", "home_team", "away_team",
+    "home_score", "away_score", "home_pens", "away_pens",
+    "winner", "home_from", "away_from", "status",
+)
+
+
+def upsert_knockout(conn: sqlite3.Connection, matches: list[dict], source: str) -> int:
+    scraped_at = _now()
+    placeholders = ", ".join(f":{c}" for c in _KO_COLS) + ", :source, :scraped_at"
+    updates = ", ".join(f"{c}=excluded.{c}" for c in _KO_COLS if c != "match_no")
+    for m in matches:
+        params = {c: m.get(c) for c in _KO_COLS}
+        params["source"] = source
+        params["scraped_at"] = scraped_at
+        conn.execute(
+            f"""INSERT INTO knockout_matches ({", ".join(_KO_COLS)}, source, scraped_at)
+                VALUES ({placeholders})
+                ON CONFLICT(match_no) DO UPDATE SET {updates}, scraped_at=excluded.scraped_at""",
+            params,
+        )
+    conn.commit()
+    return len(matches)
 
 
 def log_run(

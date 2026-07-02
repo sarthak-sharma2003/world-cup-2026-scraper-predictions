@@ -25,6 +25,8 @@ sources:
     base_url: "https://en.wikipedia.org"
     min_delay_seconds: 2.0
     respect_robots: true
+    # Knockout-bracket scraper reads this article's per-match football-box elements.
+    knockout_page: "/wiki/2026_FIFA_World_Cup"
     pages:
       wc2026_group_standings:
         path: "/wiki/2026_FIFA_World_Cup"

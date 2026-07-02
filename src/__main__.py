@@ -9,6 +9,7 @@ import logging
 
 from . import storage, validator
 from .config import load_config
+from .scraper.knockout import KnockoutScraper
 from .scraper.wikipedia_static import WikipediaScraper
 
 logging.basicConfig(
@@ -58,6 +59,17 @@ def run() -> None:
         failures,
         status,
     )
+
+    # Knockout bracket
+    ko_started = storage._now()
+    knockouts = KnockoutScraper(source_cfg, defaults).scrape()
+    storage.upsert_knockout(conn, knockouts, source=source_key)
+    storage.export_table(conn, "knockout_matches")
+    storage.log_run(
+        conn, "knockout", ko_started, records=len(knockouts), failures=0,
+        status="ok" if knockouts else "empty",
+    )
+    log.info("knockout matches stored=%d", len(knockouts))
 
 
 if __name__ == "__main__":

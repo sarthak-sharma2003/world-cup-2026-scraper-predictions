@@ -55,11 +55,16 @@ Launch the dashboard:
 streamlit run dashboard.py   # then open http://localhost:8501
 ```
 
+Pages: **Home** (group standings + match predictor) and **Knockouts** (live
+double-sided bracket with advancement probabilities; click any match for detail).
+
 ## Reliability & compliance
 - Polite by default: real User-Agent, per-source rate limits, exponential backoff, robots.txt checks.
 - Graceful degradation: bad rows are logged and skipped, not fatal; each run is recorded in `scrape_runs`.
 - Config-driven selectors keep the codebase stable when a site tweaks its markup.
 
 ## Status
-Scaffold complete: static scraper + validation + storage + scheduled workflow.
-Next: dynamic (Selenium) source, JSON-endpoint source, Dixon-Coles model, Streamlit dashboard.
+Working: static scraper (group standings + knockout bracket) + validation + storage +
+scheduled workflow + Streamlit dashboard (standings, match predictor, live knockout bracket
+with Monte Carlo championship odds).
+Next: dynamic (Selenium) source, JSON-endpoint source, Dixon-Coles upgrade, Apify/FBref comparison.
