@@ -87,3 +87,25 @@ def validate_team_stat(record: dict) -> tuple[dict, list[str]]:
         out[field] = coerced
 
     return out, errors
+
+
+def validate_quote(record: dict) -> tuple[dict, list[str]]:
+    """Coerce + validate one record from the dynamic (JS-rendered) layer.
+
+    Same contract as validate_team_stat: returns (cleaned_record, errors), never
+    raises. Trims whitespace and requires the two key fields to be non-empty.
+    """
+    errors: list[str] = []
+    out = dict(record)
+
+    quote = (out.get("quote") or "").strip()
+    author = (out.get("author") or "").strip()
+    if not quote:
+        errors.append("missing/blank required field: quote")
+    if not author:
+        errors.append("missing/blank required field: author")
+    out["quote"] = quote or None
+    out["author"] = author or None
+    out["tags"] = (out.get("tags") or "").strip()
+
+    return out, errors

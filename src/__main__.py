@@ -87,6 +87,38 @@ def run() -> None:
         )
         log.info("model inputs (elo+xg) stored=%d", len(model_inputs))
 
+    # Dynamic (JS-rendered) layer: content built client-side by JavaScript and
+    # absent from the raw HTML, extracted with headless Selenium. Fully isolated in
+    # try/except — a missing browser or a render timeout must NOT break the
+    # scheduled Wikipedia/dataset refresh.
+    dyn_cfg = cfg["sources"].get("dynamic_js")
+    if dyn_cfg:
+        dyn_started = storage._now()
+        try:
+            from .scraper.dynamic_render import DynamicRenderScraper
+
+            raw = DynamicRenderScraper(dyn_cfg, defaults).scrape()
+            clean_dyn: list[dict] = []
+            dyn_failures = 0
+            for rec in raw:
+                cleaned, errors = validator.validate_quote(rec)
+                if errors:
+                    dyn_failures += 1
+                    log.warning("dynamic validation issues: %s", errors)
+                    if not cleaned.get("quote"):
+                        continue  # unusable row — drop it, keep going
+                clean_dyn.append(cleaned)
+            stored = storage.upsert_dynamic_quotes(conn, clean_dyn, source="quotes_js")
+            storage.export_table(conn, "dynamic_quotes")
+            storage.log_run(
+                conn, "dynamic_js", dyn_started, records=stored, failures=dyn_failures,
+                status="ok" if stored else "empty",
+            )
+            log.info("dynamic (JS-rendered) layer: records stored=%d failures=%d", stored, dyn_failures)
+        except Exception as exc:  # non-fatal: log and move on
+            log.error("dynamic layer failed (non-fatal): %s", exc)
+            storage.log_run(conn, "dynamic_js", dyn_started, records=0, failures=0, status="failed")
+
 
 if __name__ == "__main__":
     run()

@@ -91,6 +91,16 @@ CREATE TABLE IF NOT EXISTS model_inputs (
     scraped_at  TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS dynamic_quotes (
+    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    quote       TEXT NOT NULL,
+    author      TEXT,
+    tags        TEXT,
+    source      TEXT NOT NULL,
+    scraped_at  TEXT NOT NULL,
+    UNIQUE(quote, source)
+);
+
 CREATE TABLE IF NOT EXISTS scrape_runs (
     id           INTEGER PRIMARY KEY AUTOINCREMENT,
     source       TEXT NOT NULL,
@@ -211,6 +221,31 @@ def upsert_model_inputs(conn: sqlite3.Connection, rows: list[dict], source: str)
                 VALUES ({placeholders})
                 ON CONFLICT(team) DO UPDATE SET {updates}, source=excluded.source,
                     scraped_at=excluded.scraped_at""",
+            params,
+        )
+    conn.commit()
+    return len(rows)
+
+
+_DQ_COLS = ("quote", "author", "tags")
+
+
+def upsert_dynamic_quotes(conn: sqlite3.Connection, rows: list[dict], source: str) -> int:
+    if not rows:  # blocked/empty render: keep last-good data, don't wipe
+        return 0
+    conn.execute("DELETE FROM dynamic_quotes WHERE source = ?", (source,))  # per-source refresh
+    scraped_at = _now()
+    placeholders = ", ".join(f":{c}" for c in _DQ_COLS) + ", :source, :scraped_at"
+    updates = ", ".join(f"{c}=excluded.{c}" for c in _DQ_COLS if c != "quote")
+    for r in rows:
+        params = {c: r.get(c) for c in _DQ_COLS}
+        params["source"] = source
+        params["scraped_at"] = scraped_at
+        conn.execute(
+            f"""INSERT INTO dynamic_quotes ({", ".join(_DQ_COLS)}, source, scraped_at)
+                VALUES ({placeholders})
+                ON CONFLICT(quote, source) DO UPDATE SET
+                    {updates}, scraped_at=excluded.scraped_at""",
             params,
         )
     conn.commit()

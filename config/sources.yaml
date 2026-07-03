@@ -56,12 +56,29 @@ sources:
     teams_file: "/teams.csv"
     matches_file: "/matches_detailed.csv"
 
-  # FBref sits behind a Cloudflare bot challenge, so it is NOT scraped directly
-  # (that would require anti-bot evasion, against our compliance stance). It is
-  # instead handled via an Apify actor — see src/scraper/apify_compare.py (planned).
-  # Kept here for documentation; the pipeline does not fetch it directly.
+  # Dynamic / JS-rendered source (the browser layer). This page's records are built
+  # client-side by JavaScript and are ABSENT from the raw HTML — a plain requests.get
+  # returns an empty container, so a real rendered browser (Selenium headless Chrome)
+  # is genuinely required. Scraped by src/scraper/dynamic_render.py. quotes.toscrape.com
+  # is a well-known, robots-permitted scraping sandbox used here purely to demonstrate
+  # the JS-rendering capability: the football stats sites that would be more on-theme
+  # (FBref, Understat, Sofascore) are each walled by Cloudflare or robots.txt, and
+  # scraping them would violate this project's robots-compliant stance.
+  dynamic_js:
+    name: "Quotes (JS-rendered sandbox)"
+    base_url: "https://quotes.toscrape.com"
+    path: "/js/"
+    max_pages: 3
+    min_delay_seconds: 2.0
+    respect_robots: true
+
+  # FBref sits behind a Cloudflare bot challenge; plain Selenium returns only a
+  # "Just a moment..." page (verified). We do NOT bypass it — anti-bot evasion is
+  # against our robots-compliant stance — so it is not fetched. It would instead be
+  # reached via an Apify actor (proxy + render). Kept here to document the
+  # protected-source case; the pipeline does not fetch it directly.
   fbref:
-    name: FBref (via Apify)
+    name: FBref (protected; would require Apify)
     base_url: "https://fbref.com"
     handled_by: apify
     respect_robots: true

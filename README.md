@@ -23,11 +23,18 @@ pipelines, robots-compliant fetching, and cross-source data integrity.
 | **Cross-source consistency check** (Wikipedia ⇄ dataset) | [`src/scraper/dataset.py`](src/scraper/dataset.py) |
 | Structured delivery (SQLite + CSV/JSON) | [`src/storage.py`](src/storage.py) |
 | Scheduled reliability (public run history) | [`.github/workflows/scrape.yml`](.github/workflows/scrape.yml) |
+| **Dynamic / JS-rendered extraction** (Selenium headless Chrome, content absent from raw HTML) | [`src/scraper/dynamic_render.py`](src/scraper/dynamic_render.py) |
 | Prediction model (Elo prior + xG form, Monte Carlo) | [`src/model.py`](src/model.py), [`src/knockout_model.py`](src/knockout_model.py) |
 
-**Planned (not yet built):** dynamic/JS-rendered source (Selenium), reverse-engineered
-JSON/AJAX endpoint, LLM extraction of unstructured notes, an Apify actor comparison
-(for the Cloudflare-protected FBref), and a Dixon-Coles model upgrade.
+The **dynamic / JS-rendered layer** ([`src/scraper/dynamic_render.py`](src/scraper/dynamic_render.py))
+renders a JavaScript-built page in headless Chrome and parses content that is absent
+from the raw HTML (a plain `requests.get` gets an empty container). It runs against a
+robots-permitted scraping sandbox: the richer football sources that would be more
+on-theme (FBref, Understat, Sofascore) are each walled by Cloudflare or `robots.txt`,
+and this project will not do anti-bot evasion or ignore robots.
+
+**Planned (not yet built):** an Apify actor to reach the Cloudflare-protected FBref,
+LLM extraction of unstructured notes, and a Dixon-Coles model upgrade.
 
 ## Architecture
 
