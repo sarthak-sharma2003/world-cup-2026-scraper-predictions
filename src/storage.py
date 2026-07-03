@@ -120,6 +120,9 @@ def init_db(conn: sqlite3.Connection) -> None:
 
 
 def upsert_team_stats(conn: sqlite3.Connection, records: list[dict], source: str) -> int:
+    if not records:  # failed/empty scrape: keep last-good data, don't wipe
+        return 0
+    conn.execute("DELETE FROM team_stats WHERE source = ?", (source,))  # full per-source refresh
     scraped_at = _now()
     stored = 0
     for rec in records:
@@ -169,6 +172,9 @@ _KO_COLS = (
 
 
 def upsert_knockout(conn: sqlite3.Connection, matches: list[dict], source: str) -> int:
+    if not matches:
+        return 0
+    conn.execute("DELETE FROM knockout_matches WHERE source = ?", (source,))
     scraped_at = _now()
     placeholders = ", ".join(f":{c}" for c in _KO_COLS) + ", :source, :scraped_at"
     updates = ", ".join(f"{c}=excluded.{c}" for c in _KO_COLS if c != "match_no")
@@ -190,6 +196,9 @@ _MI_COLS = ("team", "elo", "fifa_rank", "xg_for", "xg_against", "xg_games")
 
 
 def upsert_model_inputs(conn: sqlite3.Connection, rows: list[dict], source: str) -> int:
+    if not rows:
+        return 0
+    conn.execute("DELETE FROM model_inputs WHERE source = ?", (source,))
     scraped_at = _now()
     placeholders = ", ".join(f":{c}" for c in _MI_COLS) + ", :source, :scraped_at"
     updates = ", ".join(f"{c}=excluded.{c}" for c in _MI_COLS if c != "team")

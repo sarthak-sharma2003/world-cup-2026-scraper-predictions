@@ -33,11 +33,22 @@ ROUND_ORDER = {
 }
 THIRD_PLACE = "Match for third place"
 
+# Fixed WC2026 48-team knockout match-number ranges (matches 73-104). Used to
+# number matches robustly instead of trusting the page's "Report N" citation
+# labels, which only coincidentally align with match numbers.
+ROUND_RANGES: dict[str, range] = {
+    "Round of 32": range(73, 89),
+    "Round of 16": range(89, 97),
+    "Quarterfinals": range(97, 101),
+    "Semifinals": range(101, 103),
+    THIRD_PLACE: range(103, 104),
+    "Final": range(104, 105),
+}
+
 _SCORE_RE = re.compile(r"(\d+)\s*[–\-]\s*(\d+)")
 _ISO_DATE_RE = re.compile(r"(\d{4}-\d{2}-\d{2})")
 _REF_RE = re.compile(r"(Winner|Loser)\s+Match\s+(\d+)", re.I)
 _MATCHNO_RE = re.compile(r"Match\s+(\d+)", re.I)
-_REPORT_RE = re.compile(r"Report\s+(\d+)", re.I)
 _FOOTNOTE_RE = re.compile(r"\[[^\]]*\]")
 
 
@@ -95,20 +106,18 @@ class KnockoutScraper:
         score_txt = _clean(score_el.get_text(strip=True))
         full_txt = box.get_text(" ", strip=True)
 
-        # Match number: scheduled matches show "Match N" as their score;
-        # played matches carry a "Report N" link.
+        # An unplayed match shows "Match N" (the bracket template's own number) as
+        # its score. That number is reliable; played matches carry only a citation
+        # label, so their number is assigned per-round later (see _assign_numbers).
         scheduled = bool(_MATCHNO_RE.fullmatch(score_txt.replace("\xa0", " ").strip()))
-        if scheduled:
-            match_no = int(_MATCHNO_RE.search(score_txt).group(1))
-        else:
-            rep = _REPORT_RE.search(full_txt)
-            match_no = int(rep.group(1)) if rep else None
+        claimed_no = int(_MATCHNO_RE.search(score_txt).group(1)) if scheduled else None
 
         home_ref, home_team, home_from = self._parse_ref(home_el.get_text(strip=True))
         away_ref, away_team, away_from = self._parse_ref(away_el.get_text(strip=True))
 
         rec: dict = {
-            "match_no": match_no,
+            "match_no": None,
+            "claimed_no": claimed_no,
             "round": round_name,
             "round_idx": ROUND_ORDER.get(round_name, 99),
             "home_ref": home_ref,
@@ -186,6 +195,34 @@ class KnockoutScraper:
                     )
                 m[f"{side}_from"] = won["match_no"]
 
+    @staticmethod
+    def _assign_numbers(matches: list[dict]) -> None:
+        """Number matches per round: honour reliable 'Match N' labels from unplayed
+        matches, then fill each round's remaining fixed slots with the played ones.
+        Guarantees unique numbers and full coverage even when the page's citation
+        labels collide."""
+        from collections import defaultdict
+
+        by_round: dict[str, list[dict]] = defaultdict(list)
+        for m in matches:
+            by_round[m["round"]].append(m)
+
+        for round_name, rng in ROUND_RANGES.items():
+            group = by_round.get(round_name, [])
+            slots = set(rng)
+            used: set[int] = set()
+            for m in group:  # honour valid, non-colliding "Match N" labels first
+                c = m.get("claimed_no")
+                if c in slots and c not in used:
+                    m["match_no"] = c
+                    used.add(c)
+            remaining = iter(sorted(slots - used))
+            for m in group:
+                if m["match_no"] is None:
+                    m["match_no"] = next(remaining, None)
+            if len(group) != len(rng):
+                log.warning("round %s: %d boxes, expected %d", round_name, len(group), len(rng))
+
     def scrape(self) -> list[dict]:
         soup = self._get_soup()
         if soup is None:
@@ -198,14 +235,14 @@ class KnockoutScraper:
             if round_name is None:  # group-stage box
                 continue
             rec = self._parse_box(box, round_name)
-            if rec and rec["match_no"] is not None:
+            if rec:
                 matches.append(rec)
 
-        # de-dupe by match_no (defensive), keep first
-        seen: dict[int, dict] = {}
+        self._assign_numbers(matches)
+        matches = [m for m in matches if m["match_no"] is not None]
         for m in matches:
-            seen.setdefault(m["match_no"], m)
-        matches = sorted(seen.values(), key=lambda m: m["match_no"])
+            m.pop("claimed_no", None)
+        matches.sort(key=lambda m: m["match_no"])
 
         self._link_feeders(matches)
         log.info("parsed %d knockout matches", len(matches))

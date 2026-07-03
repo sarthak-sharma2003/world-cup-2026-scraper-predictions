@@ -25,6 +25,16 @@ def test_parse_result_normal_win():
     assert rec["winner"] == "Canada"
 
 
+def test_assign_numbers_covers_round_and_resolves_collisions():
+    # Two boxes both claim "Match 83" (the live-page citation collision); the rest
+    # are played (no reliable label). Every R32 slot 73-88 must be filled uniquely.
+    recs = [{"round": "Round of 32", "match_no": None, "claimed_no": 83},
+            {"round": "Round of 32", "match_no": None, "claimed_no": 83}]
+    recs += [{"round": "Round of 32", "match_no": None, "claimed_no": None} for _ in range(14)]
+    KnockoutScraper._assign_numbers(recs)
+    assert sorted(m["match_no"] for m in recs) == list(range(73, 89))
+
+
 ROWS = [
     {"canonical_team": "Strong", "games": 3, "goals_for": 9, "goals_against": 1},
     {"canonical_team": "Weak", "games": 3, "goals_for": 1, "goals_against": 9},

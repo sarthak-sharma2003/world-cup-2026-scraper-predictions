@@ -62,7 +62,7 @@ with left:
         })
     )
     table.index += 1
-    st.dataframe(table, use_container_width=True, height=560)
+    st.dataframe(table, width="stretch", height=560)
 
 with right:
     st.subheader("Match predictor")
