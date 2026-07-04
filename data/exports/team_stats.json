@@ -3,27 +3,27 @@
     "id": 1,
     "team": "Mexico",
     "canonical_team": "Mexico",
-    "games": 4,
-    "wins": 4,
+    "games": 3,
+    "wins": 3,
     "draws": 0,
     "losses": 0,
-    "goals_for": 8,
+    "goals_for": 6,
     "goals_against": 0,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 2,
     "team": "South Africa",
     "canonical_team": "South Africa",
-    "games": 4,
+    "games": 3,
     "wins": 1,
     "draws": 1,
-    "losses": 2,
+    "losses": 1,
     "goals_for": 2,
-    "goals_against": 4,
+    "goals_against": 3,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 3,
@@ -36,7 +36,7 @@
     "goals_for": 2,
     "goals_against": 3,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 4,
@@ -49,46 +49,46 @@
     "goals_for": 2,
     "goals_against": 6,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 5,
     "team": "Switzerland",
     "canonical_team": "Switzerland",
-    "games": 4,
-    "wins": 3,
+    "games": 3,
+    "wins": 2,
     "draws": 1,
     "losses": 0,
-    "goals_for": 9,
+    "goals_for": 7,
     "goals_against": 3,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 6,
     "team": "Canada",
     "canonical_team": "Canada",
-    "games": 4,
-    "wins": 2,
+    "games": 3,
+    "wins": 1,
     "draws": 1,
     "losses": 1,
-    "goals_for": 9,
+    "goals_for": 8,
     "goals_against": 3,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 7,
     "team": "Bosnia and Herzegovina",
     "canonical_team": "Bosnia",
-    "games": 4,
+    "games": 3,
     "wins": 1,
     "draws": 1,
-    "losses": 2,
+    "losses": 1,
     "goals_for": 5,
-    "goals_against": 8,
+    "goals_against": 6,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 8,
@@ -101,33 +101,33 @@
     "goals_for": 2,
     "goals_against": 10,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 9,
     "team": "Brazil",
     "canonical_team": "Brazil",
-    "games": 4,
-    "wins": 3,
+    "games": 3,
+    "wins": 2,
     "draws": 1,
     "losses": 0,
-    "goals_for": 9,
-    "goals_against": 2,
+    "goals_for": 7,
+    "goals_against": 1,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 10,
     "team": "Morocco",
     "canonical_team": "Morocco",
-    "games": 4,
+    "games": 3,
     "wins": 2,
-    "draws": 2,
+    "draws": 1,
     "losses": 0,
-    "goals_for": 7,
-    "goals_against": 4,
+    "goals_for": 6,
+    "goals_against": 3,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 11,
@@ -140,7 +140,7 @@
     "goals_for": 1,
     "goals_against": 4,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 12,
@@ -153,46 +153,46 @@
     "goals_for": 2,
     "goals_against": 8,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 13,
     "team": "United States",
     "canonical_team": "United States",
-    "games": 4,
-    "wins": 3,
+    "games": 3,
+    "wins": 2,
     "draws": 0,
     "losses": 1,
-    "goals_for": 10,
+    "goals_for": 8,
     "goals_against": 4,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 14,
     "team": "Australia",
     "canonical_team": "Australia",
-    "games": 4,
+    "games": 3,
     "wins": 1,
-    "draws": 2,
+    "draws": 1,
     "losses": 1,
-    "goals_for": 3,
-    "goals_against": 3,
+    "goals_for": 2,
+    "goals_against": 2,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 15,
     "team": "Paraguay",
     "canonical_team": "Paraguay",
-    "games": 4,
+    "games": 3,
     "wins": 1,
-    "draws": 2,
+    "draws": 1,
     "losses": 1,
-    "goals_for": 3,
+    "goals_for": 2,
     "goals_against": 4,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 16,
@@ -205,46 +205,46 @@
     "goals_for": 3,
     "goals_against": 5,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 17,
     "team": "Germany",
     "canonical_team": "Germany",
-    "games": 4,
+    "games": 3,
     "wins": 2,
-    "draws": 1,
+    "draws": 0,
     "losses": 1,
-    "goals_for": 11,
-    "goals_against": 5,
+    "goals_for": 10,
+    "goals_against": 4,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 18,
     "team": "Ivory Coast",
     "canonical_team": "Ivory Coast",
-    "games": 4,
+    "games": 3,
     "wins": 2,
     "draws": 0,
-    "losses": 2,
-    "goals_for": 5,
-    "goals_against": 4,
+    "losses": 1,
+    "goals_for": 4,
+    "goals_against": 2,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 19,
     "team": "Ecuador",
     "canonical_team": "Ecuador",
-    "games": 4,
+    "games": 3,
     "wins": 1,
     "draws": 1,
-    "losses": 2,
+    "losses": 1,
     "goals_for": 2,
-    "goals_against": 4,
+    "goals_against": 2,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 20,
@@ -257,46 +257,46 @@
     "goals_for": 1,
     "goals_against": 9,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 21,
     "team": "Netherlands",
     "canonical_team": "Netherlands",
-    "games": 4,
+    "games": 3,
     "wins": 2,
-    "draws": 2,
+    "draws": 1,
     "losses": 0,
-    "goals_for": 11,
-    "goals_against": 5,
+    "goals_for": 10,
+    "goals_against": 4,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 22,
     "team": "Japan",
     "canonical_team": "Japan",
-    "games": 4,
+    "games": 3,
     "wins": 1,
     "draws": 2,
-    "losses": 1,
-    "goals_for": 8,
-    "goals_against": 5,
+    "losses": 0,
+    "goals_for": 7,
+    "goals_against": 3,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 23,
     "team": "Sweden",
     "canonical_team": "Sweden",
-    "games": 4,
+    "games": 3,
     "wins": 1,
     "draws": 1,
-    "losses": 2,
+    "losses": 1,
     "goals_for": 7,
-    "goals_against": 10,
+    "goals_against": 7,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 24,
@@ -309,33 +309,33 @@
     "goals_for": 2,
     "goals_against": 12,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 25,
     "team": "Belgium",
     "canonical_team": "Belgium",
-    "games": 4,
-    "wins": 2,
+    "games": 3,
+    "wins": 1,
     "draws": 2,
     "losses": 0,
-    "goals_for": 9,
-    "goals_against": 4,
+    "goals_for": 6,
+    "goals_against": 2,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 26,
     "team": "Egypt",
     "canonical_team": "Egypt",
-    "games": 4,
+    "games": 3,
     "wins": 1,
-    "draws": 3,
+    "draws": 2,
     "losses": 0,
-    "goals_for": 6,
-    "goals_against": 4,
+    "goals_for": 5,
+    "goals_against": 3,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 27,
@@ -348,7 +348,7 @@
     "goals_for": 3,
     "goals_against": 3,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 28,
@@ -361,33 +361,33 @@
     "goals_for": 4,
     "goals_against": 10,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 29,
     "team": "Spain",
     "canonical_team": "Spain",
-    "games": 4,
-    "wins": 3,
+    "games": 3,
+    "wins": 2,
     "draws": 1,
     "losses": 0,
-    "goals_for": 8,
+    "goals_for": 5,
     "goals_against": 0,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 30,
     "team": "Cape Verde",
     "canonical_team": "Cape Verde",
-    "games": 4,
+    "games": 3,
     "wins": 0,
     "draws": 3,
-    "losses": 1,
-    "goals_for": 4,
-    "goals_against": 5,
+    "losses": 0,
+    "goals_for": 2,
+    "goals_against": 2,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 31,
@@ -400,7 +400,7 @@
     "goals_for": 3,
     "goals_against": 4,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 32,
@@ -413,46 +413,46 @@
     "goals_for": 1,
     "goals_against": 5,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 33,
     "team": "France",
     "canonical_team": "France",
-    "games": 4,
-    "wins": 4,
+    "games": 3,
+    "wins": 3,
     "draws": 0,
     "losses": 0,
-    "goals_for": 13,
+    "goals_for": 10,
     "goals_against": 2,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 34,
     "team": "Norway",
     "canonical_team": "Norway",
-    "games": 4,
-    "wins": 3,
+    "games": 3,
+    "wins": 2,
     "draws": 0,
     "losses": 1,
-    "goals_for": 10,
-    "goals_against": 8,
+    "goals_for": 8,
+    "goals_against": 7,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 35,
     "team": "Senegal",
     "canonical_team": "Senegal",
-    "games": 4,
+    "games": 3,
     "wins": 1,
     "draws": 0,
-    "losses": 3,
-    "goals_for": 10,
-    "goals_against": 9,
+    "losses": 2,
+    "goals_for": 8,
+    "goals_against": 6,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 36,
@@ -465,46 +465,46 @@
     "goals_for": 1,
     "goals_against": 12,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 37,
     "team": "Argentina",
     "canonical_team": "Argentina",
-    "games": 4,
-    "wins": 4,
+    "games": 3,
+    "wins": 3,
     "draws": 0,
     "losses": 0,
-    "goals_for": 11,
-    "goals_against": 3,
+    "goals_for": 8,
+    "goals_against": 1,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 38,
     "team": "Austria",
     "canonical_team": "Austria",
-    "games": 4,
+    "games": 3,
     "wins": 1,
     "draws": 1,
-    "losses": 2,
+    "losses": 1,
     "goals_for": 6,
-    "goals_against": 9,
+    "goals_against": 6,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 39,
     "team": "Algeria",
     "canonical_team": "Algeria",
-    "games": 4,
+    "games": 3,
     "wins": 1,
     "draws": 1,
-    "losses": 2,
+    "losses": 1,
     "goals_for": 5,
-    "goals_against": 9,
+    "goals_against": 7,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 40,
@@ -517,46 +517,46 @@
     "goals_for": 3,
     "goals_against": 8,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 41,
     "team": "Colombia",
     "canonical_team": "Colombia",
-    "games": 4,
-    "wins": 3,
+    "games": 3,
+    "wins": 2,
     "draws": 1,
     "losses": 0,
-    "goals_for": 5,
+    "goals_for": 4,
     "goals_against": 1,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 42,
     "team": "Portugal",
     "canonical_team": "Portugal",
-    "games": 4,
-    "wins": 2,
+    "games": 3,
+    "wins": 1,
     "draws": 2,
     "losses": 0,
-    "goals_for": 8,
-    "goals_against": 2,
+    "goals_for": 6,
+    "goals_against": 1,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 43,
     "team": "DR Congo",
     "canonical_team": "DR Congo",
-    "games": 4,
+    "games": 3,
     "wins": 1,
     "draws": 1,
-    "losses": 2,
-    "goals_for": 5,
-    "goals_against": 5,
+    "losses": 1,
+    "goals_for": 4,
+    "goals_against": 3,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 44,
@@ -569,46 +569,46 @@
     "goals_for": 2,
     "goals_against": 11,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 45,
     "team": "England",
     "canonical_team": "England",
-    "games": 4,
-    "wins": 3,
+    "games": 3,
+    "wins": 2,
     "draws": 1,
     "losses": 0,
-    "goals_for": 8,
-    "goals_against": 3,
+    "goals_for": 6,
+    "goals_against": 2,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 46,
     "team": "Croatia",
     "canonical_team": "Croatia",
-    "games": 4,
+    "games": 3,
     "wins": 2,
     "draws": 0,
-    "losses": 2,
-    "goals_for": 6,
-    "goals_against": 7,
+    "losses": 1,
+    "goals_for": 5,
+    "goals_against": 5,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 47,
     "team": "Ghana",
     "canonical_team": "Ghana",
-    "games": 4,
+    "games": 3,
     "wins": 1,
     "draws": 1,
-    "losses": 2,
+    "losses": 1,
     "goals_for": 2,
-    "goals_against": 3,
+    "goals_against": 2,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   },
   {
     "id": 48,
@@ -621,6 +621,6 @@
     "goals_for": 0,
     "goals_against": 4,
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:33.944386+00:00"
+    "scraped_at": "2026-07-04T19:23:17.851197+00:00"
   }
 ]

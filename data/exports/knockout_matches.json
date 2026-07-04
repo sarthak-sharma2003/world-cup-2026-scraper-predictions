@@ -18,7 +18,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 74,
@@ -39,7 +39,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 75,
@@ -60,7 +60,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 76,
@@ -81,7 +81,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 77,
@@ -102,7 +102,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 78,
@@ -123,7 +123,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 79,
@@ -144,7 +144,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 80,
@@ -165,7 +165,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 81,
@@ -186,7 +186,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 82,
@@ -207,7 +207,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 83,
@@ -228,7 +228,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 84,
@@ -249,7 +249,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 85,
@@ -270,7 +270,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 86,
@@ -291,7 +291,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 87,
@@ -312,7 +312,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 88,
@@ -333,7 +333,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 89,
@@ -354,28 +354,28 @@
     "away_from": 78,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 90,
     "round": "Round of 16",
     "round_idx": 1,
     "match_date": "2026-07-04",
-    "venue": "NRG Stadium , Houston Referee: Michael Oliver ( England )",
+    "venue": "NRG Stadium , Houston",
     "home_ref": "Canada",
     "away_ref": "Morocco",
     "home_team": "Canada",
     "away_team": "Morocco",
-    "home_score": null,
-    "away_score": null,
+    "home_score": 0,
+    "away_score": 3,
     "home_pens": null,
     "away_pens": null,
-    "winner": null,
+    "winner": "Morocco",
     "home_from": 73,
     "away_from": 76,
-    "status": "scheduled",
+    "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 91,
@@ -396,7 +396,7 @@
     "away_from": 77,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 92,
@@ -417,14 +417,14 @@
     "away_from": 80,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 93,
     "round": "Round of 16",
     "round_idx": 1,
     "match_date": "2026-07-06",
-    "venue": "AT&T Stadium , Arlington",
+    "venue": "AT&T Stadium , Arlington Referee: Anthony Taylor ( England )",
     "home_ref": "Portugal",
     "away_ref": "Spain",
     "home_team": "Portugal",
@@ -438,14 +438,14 @@
     "away_from": 83,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 94,
     "round": "Round of 16",
     "round_idx": 1,
     "match_date": "2026-07-06",
-    "venue": "Lumen Field , Seattle",
+    "venue": "Lumen Field , Seattle Referee: Adham Makhadmeh ( Jordan )",
     "home_ref": "United States",
     "away_ref": "Belgium",
     "home_team": "United States",
@@ -459,7 +459,7 @@
     "away_from": 81,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 95,
@@ -480,7 +480,7 @@
     "away_from": 86,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 96,
@@ -501,7 +501,7 @@
     "away_from": 88,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 97,
@@ -510,9 +510,9 @@
     "match_date": "2026-07-09",
     "venue": "Gillette Stadium , Foxborough",
     "home_ref": "Winner Match 89",
-    "away_ref": "Winner Match 90",
+    "away_ref": "Morocco",
     "home_team": null,
-    "away_team": null,
+    "away_team": "Morocco",
     "home_score": null,
     "away_score": null,
     "home_pens": null,
@@ -522,7 +522,7 @@
     "away_from": 90,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 98,
@@ -543,7 +543,7 @@
     "away_from": 94,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 99,
@@ -564,7 +564,7 @@
     "away_from": 92,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 100,
@@ -585,7 +585,7 @@
     "away_from": 96,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 101,
@@ -606,7 +606,7 @@
     "away_from": 98,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 102,
@@ -627,7 +627,7 @@
     "away_from": 100,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 103,
@@ -648,7 +648,7 @@
     "away_from": 102,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   },
   {
     "match_no": 104,
@@ -669,6 +669,6 @@
     "away_from": 102,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-04T13:47:35.249876+00:00"
+    "scraped_at": "2026-07-04T19:23:19.304277+00:00"
   }
 ]

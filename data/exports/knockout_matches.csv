@@ -1,33 +1,33 @@
 match_no,round,round_idx,match_date,venue,home_ref,away_ref,home_team,away_team,home_score,away_score,home_pens,away_pens,winner,home_from,away_from,status,source,scraped_at
-73,Round of 32,0,2026-06-28,"SoFi Stadium , Inglewood",South Africa,Canada,South Africa,Canada,0,1,,,Canada,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-74,Round of 32,0,2026-06-29,"NRG Stadium , Houston",Brazil,Japan,Brazil,Japan,2,1,,,Brazil,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-75,Round of 32,0,2026-06-29,"Gillette Stadium , Foxborough",Germany,Paraguay,Germany,Paraguay,1,1,3,4,Paraguay,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-76,Round of 32,0,2026-06-29,"Estadio BBVA , Guadalupe",Netherlands,Morocco,Netherlands,Morocco,1,1,2,3,Morocco,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-77,Round of 32,0,2026-06-30,"AT&T Stadium , Arlington",Ivory Coast,Norway,Ivory Coast,Norway,1,2,,,Norway,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-78,Round of 32,0,2026-06-30,"MetLife Stadium , East Rutherford",France,Sweden,France,Sweden,3,0,,,France,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-79,Round of 32,0,2026-06-30,"Estadio Azteca , Mexico City",Mexico,Ecuador,Mexico,Ecuador,2,0,,,Mexico,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-80,Round of 32,0,2026-07-01,"Mercedes-Benz Stadium , Atlanta",England,DR Congo,England,DR Congo,2,1,,,England,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-81,Round of 32,0,2026-07-01,"Lumen Field , Seattle",Belgium,Senegal,Belgium,Senegal,3,2,,,Belgium,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-82,Round of 32,0,2026-07-01,"Levi's Stadium , Santa Clara",United States,Bosnia and Herzegovina,United States,Bosnia,2,0,,,United States,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-83,Round of 32,0,2026-07-02,"SoFi Stadium , Inglewood",Spain,Austria,Spain,Austria,3,0,,,Spain,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-84,Round of 32,0,2026-07-02,"BMO Field , Toronto",Portugal,Croatia,Portugal,Croatia,2,1,,,Portugal,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-85,Round of 32,0,2026-07-02,"BC Place , Vancouver",Switzerland,Algeria,Switzerland,Algeria,2,0,,,Switzerland,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-86,Round of 32,0,2026-07-03,"AT&T Stadium , Arlington",Australia,Egypt,Australia,Egypt,1,1,2,4,Egypt,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-87,Round of 32,0,2026-07-03,"Hard Rock Stadium , Miami Gardens",Argentina,Cape Verde,Argentina,Cape Verde,3,2,,,Argentina,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-88,Round of 32,0,2026-07-03,"Arrowhead Stadium , Kansas City",Colombia,Ghana,Colombia,Ghana,1,0,,,Colombia,,,played,wikipedia,2026-07-04T13:47:35.249876+00:00
-89,Round of 16,1,2026-07-04,"Lincoln Financial Field , Philadelphia Referee: Ilgiz Tantashev ( Uzbekistan )",Paraguay,France,Paraguay,France,,,,,,75,78,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-90,Round of 16,1,2026-07-04,"NRG Stadium , Houston Referee: Michael Oliver ( England )",Canada,Morocco,Canada,Morocco,,,,,,73,76,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-91,Round of 16,1,2026-07-05,"MetLife Stadium , East Rutherford Referee: Ismail Elfath ( United States )",Brazil,Norway,Brazil,Norway,,,,,,74,77,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-92,Round of 16,1,2026-07-05,"Estadio Azteca , Mexico City Referee: Alireza Faghani ( Australia )",Mexico,England,Mexico,England,,,,,,79,80,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-93,Round of 16,1,2026-07-06,"AT&T Stadium , Arlington",Portugal,Spain,Portugal,Spain,,,,,,84,83,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-94,Round of 16,1,2026-07-06,"Lumen Field , Seattle",United States,Belgium,United States,Belgium,,,,,,82,81,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-95,Round of 16,1,2026-07-07,"Mercedes-Benz Stadium , Atlanta",Argentina,Egypt,Argentina,Egypt,,,,,,87,86,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-96,Round of 16,1,2026-07-07,"BC Place , Vancouver",Switzerland,Colombia,Switzerland,Colombia,,,,,,85,88,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-97,Quarterfinals,2,2026-07-09,"Gillette Stadium , Foxborough",Winner Match 89,Winner Match 90,,,,,,,,89,90,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-98,Quarterfinals,2,2026-07-10,"SoFi Stadium , Inglewood",Winner Match 93,Winner Match 94,,,,,,,,93,94,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-99,Quarterfinals,2,2026-07-11,"Hard Rock Stadium , Miami Gardens",Winner Match 91,Winner Match 92,,,,,,,,91,92,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-100,Quarterfinals,2,2026-07-11,"Arrowhead Stadium , Kansas City",Winner Match 95,Winner Match 96,,,,,,,,95,96,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-101,Semifinals,3,2026-07-14,"AT&T Stadium , Arlington",Winner Match 97,Winner Match 98,,,,,,,,97,98,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-102,Semifinals,3,2026-07-15,"Mercedes-Benz Stadium , Atlanta",Winner Match 99,Winner Match 100,,,,,,,,99,100,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-103,Match for third place,99,2026-07-18,"Hard Rock Stadium , Miami Gardens",Loser Match 101,Loser Match 102,,,,,,,,101,102,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
-104,Final,4,2026-07-19,"MetLife Stadium , East Rutherford",Winner Match 101,Winner Match 102,,,,,,,,101,102,scheduled,wikipedia,2026-07-04T13:47:35.249876+00:00
+73,Round of 32,0,2026-06-28,"SoFi Stadium , Inglewood",South Africa,Canada,South Africa,Canada,0,1,,,Canada,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+74,Round of 32,0,2026-06-29,"NRG Stadium , Houston",Brazil,Japan,Brazil,Japan,2,1,,,Brazil,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+75,Round of 32,0,2026-06-29,"Gillette Stadium , Foxborough",Germany,Paraguay,Germany,Paraguay,1,1,3,4,Paraguay,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+76,Round of 32,0,2026-06-29,"Estadio BBVA , Guadalupe",Netherlands,Morocco,Netherlands,Morocco,1,1,2,3,Morocco,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+77,Round of 32,0,2026-06-30,"AT&T Stadium , Arlington",Ivory Coast,Norway,Ivory Coast,Norway,1,2,,,Norway,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+78,Round of 32,0,2026-06-30,"MetLife Stadium , East Rutherford",France,Sweden,France,Sweden,3,0,,,France,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+79,Round of 32,0,2026-06-30,"Estadio Azteca , Mexico City",Mexico,Ecuador,Mexico,Ecuador,2,0,,,Mexico,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+80,Round of 32,0,2026-07-01,"Mercedes-Benz Stadium , Atlanta",England,DR Congo,England,DR Congo,2,1,,,England,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+81,Round of 32,0,2026-07-01,"Lumen Field , Seattle",Belgium,Senegal,Belgium,Senegal,3,2,,,Belgium,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+82,Round of 32,0,2026-07-01,"Levi's Stadium , Santa Clara",United States,Bosnia and Herzegovina,United States,Bosnia,2,0,,,United States,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+83,Round of 32,0,2026-07-02,"SoFi Stadium , Inglewood",Spain,Austria,Spain,Austria,3,0,,,Spain,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+84,Round of 32,0,2026-07-02,"BMO Field , Toronto",Portugal,Croatia,Portugal,Croatia,2,1,,,Portugal,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+85,Round of 32,0,2026-07-02,"BC Place , Vancouver",Switzerland,Algeria,Switzerland,Algeria,2,0,,,Switzerland,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+86,Round of 32,0,2026-07-03,"AT&T Stadium , Arlington",Australia,Egypt,Australia,Egypt,1,1,2,4,Egypt,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+87,Round of 32,0,2026-07-03,"Hard Rock Stadium , Miami Gardens",Argentina,Cape Verde,Argentina,Cape Verde,3,2,,,Argentina,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+88,Round of 32,0,2026-07-03,"Arrowhead Stadium , Kansas City",Colombia,Ghana,Colombia,Ghana,1,0,,,Colombia,,,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+89,Round of 16,1,2026-07-04,"Lincoln Financial Field , Philadelphia Referee: Ilgiz Tantashev ( Uzbekistan )",Paraguay,France,Paraguay,France,,,,,,75,78,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
+90,Round of 16,1,2026-07-04,"NRG Stadium , Houston",Canada,Morocco,Canada,Morocco,0,3,,,Morocco,73,76,played,wikipedia,2026-07-04T19:23:19.304277+00:00
+91,Round of 16,1,2026-07-05,"MetLife Stadium , East Rutherford Referee: Ismail Elfath ( United States )",Brazil,Norway,Brazil,Norway,,,,,,74,77,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
+92,Round of 16,1,2026-07-05,"Estadio Azteca , Mexico City Referee: Alireza Faghani ( Australia )",Mexico,England,Mexico,England,,,,,,79,80,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
+93,Round of 16,1,2026-07-06,"AT&T Stadium , Arlington Referee: Anthony Taylor ( England )",Portugal,Spain,Portugal,Spain,,,,,,84,83,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
+94,Round of 16,1,2026-07-06,"Lumen Field , Seattle Referee: Adham Makhadmeh ( Jordan )",United States,Belgium,United States,Belgium,,,,,,82,81,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
+95,Round of 16,1,2026-07-07,"Mercedes-Benz Stadium , Atlanta",Argentina,Egypt,Argentina,Egypt,,,,,,87,86,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
+96,Round of 16,1,2026-07-07,"BC Place , Vancouver",Switzerland,Colombia,Switzerland,Colombia,,,,,,85,88,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
+97,Quarterfinals,2,2026-07-09,"Gillette Stadium , Foxborough",Winner Match 89,Morocco,,Morocco,,,,,,89,90,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
+98,Quarterfinals,2,2026-07-10,"SoFi Stadium , Inglewood",Winner Match 93,Winner Match 94,,,,,,,,93,94,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
+99,Quarterfinals,2,2026-07-11,"Hard Rock Stadium , Miami Gardens",Winner Match 91,Winner Match 92,,,,,,,,91,92,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
+100,Quarterfinals,2,2026-07-11,"Arrowhead Stadium , Kansas City",Winner Match 95,Winner Match 96,,,,,,,,95,96,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
+101,Semifinals,3,2026-07-14,"AT&T Stadium , Arlington",Winner Match 97,Winner Match 98,,,,,,,,97,98,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
+102,Semifinals,3,2026-07-15,"Mercedes-Benz Stadium , Atlanta",Winner Match 99,Winner Match 100,,,,,,,,99,100,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
+103,Match for third place,99,2026-07-18,"Hard Rock Stadium , Miami Gardens",Loser Match 101,Loser Match 102,,,,,,,,101,102,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
+104,Final,4,2026-07-19,"MetLife Stadium , East Rutherford",Winner Match 101,Winner Match 102,,,,,,,,101,102,scheduled,wikipedia,2026-07-04T19:23:19.304277+00:00
