@@ -7,7 +7,7 @@
     "xg_against": 4.54,
     "xg_games": 5,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "South Africa",
@@ -17,7 +17,7 @@
     "xg_against": 5.9,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "South Korea",
@@ -27,7 +27,7 @@
     "xg_against": 4.0,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Czech Republic",
@@ -37,7 +37,7 @@
     "xg_against": 3.8699999999999997,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Canada",
@@ -47,7 +47,7 @@
     "xg_against": 3.24,
     "xg_games": 5,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Bosnia",
@@ -57,7 +57,7 @@
     "xg_against": 5.67,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Qatar",
@@ -67,7 +67,7 @@
     "xg_against": 6.84,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Switzerland",
@@ -77,7 +77,7 @@
     "xg_against": 3.74,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Brazil",
@@ -87,7 +87,7 @@
     "xg_against": 3.7300000000000004,
     "xg_games": 5,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Morocco",
@@ -97,7 +97,7 @@
     "xg_against": 4.74,
     "xg_games": 5,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Haiti",
@@ -107,7 +107,7 @@
     "xg_against": 4.16,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Scotland",
@@ -117,17 +117,17 @@
     "xg_against": 3.97,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "United States",
     "elo": 1850,
     "fifa_rank": 17,
-    "xg_for": 6.34,
-    "xg_against": 3.0700000000000003,
-    "xg_games": 4,
+    "xg_for": 7.01,
+    "xg_against": 5.220000000000001,
+    "xg_games": 5,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Paraguay",
@@ -137,7 +137,7 @@
     "xg_against": 6.159999999999999,
     "xg_games": 5,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Australia",
@@ -147,7 +147,7 @@
     "xg_against": 3.84,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Turkey",
@@ -157,7 +157,7 @@
     "xg_against": 3.23,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Germany",
@@ -167,7 +167,7 @@
     "xg_against": 2.86,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Cura\u00e7ao",
@@ -177,7 +177,7 @@
     "xg_against": 8.42,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Ivory Coast",
@@ -187,7 +187,7 @@
     "xg_against": 5.14,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Ecuador",
@@ -197,7 +197,7 @@
     "xg_against": 3.7500000000000004,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Netherlands",
@@ -207,7 +207,7 @@
     "xg_against": 4.720000000000001,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Japan",
@@ -217,7 +217,7 @@
     "xg_against": 4.9399999999999995,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Sweden",
@@ -227,7 +227,7 @@
     "xg_against": 8.52,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Tunisia",
@@ -237,17 +237,17 @@
     "xg_against": 8.39,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Belgium",
     "elo": 1950,
     "fifa_rank": 9,
-    "xg_for": 8.02,
-    "xg_against": 5.800000000000001,
-    "xg_games": 4,
+    "xg_for": 10.17,
+    "xg_against": 6.470000000000001,
+    "xg_games": 5,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Egypt",
@@ -257,7 +257,7 @@
     "xg_against": 3.92,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Iran",
@@ -267,7 +267,7 @@
     "xg_against": 3.5,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "New Zealand",
@@ -277,17 +277,17 @@
     "xg_against": 7.279999999999999,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Spain",
     "elo": 2120,
     "fifa_rank": 2,
-    "xg_for": 9.62,
-    "xg_against": 1.7,
-    "xg_games": 4,
+    "xg_for": 11.309999999999999,
+    "xg_against": 2.33,
+    "xg_games": 5,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Cape Verde",
@@ -297,7 +297,7 @@
     "xg_against": 6.34,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Saudi Arabia",
@@ -307,7 +307,7 @@
     "xg_against": 5.46,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Uruguay",
@@ -317,7 +317,7 @@
     "xg_against": 3.3000000000000003,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "France",
@@ -327,7 +327,7 @@
     "xg_against": 3.7699999999999996,
     "xg_games": 5,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Senegal",
@@ -337,7 +337,7 @@
     "xg_against": 6.27,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Iraq",
@@ -347,7 +347,7 @@
     "xg_against": 8.07,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Norway",
@@ -357,7 +357,7 @@
     "xg_against": 6.879999999999999,
     "xg_games": 5,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Argentina",
@@ -367,7 +367,7 @@
     "xg_against": 2.19,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Algeria",
@@ -377,7 +377,7 @@
     "xg_against": 7.49,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Austria",
@@ -387,7 +387,7 @@
     "xg_against": 7.12,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Jordan",
@@ -397,17 +397,17 @@
     "xg_against": 6.029999999999999,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Portugal",
     "elo": 2010,
     "fifa_rank": 5,
-    "xg_for": 8.23,
-    "xg_against": 4.53,
-    "xg_games": 4,
+    "xg_for": 8.860000000000001,
+    "xg_against": 6.220000000000001,
+    "xg_games": 5,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "DR Congo",
@@ -417,7 +417,7 @@
     "xg_against": 5.640000000000001,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Uzbekistan",
@@ -427,7 +427,7 @@
     "xg_against": 7.99,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Colombia",
@@ -437,7 +437,7 @@
     "xg_against": 2.5199999999999996,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "England",
@@ -447,7 +447,7 @@
     "xg_against": 5.859999999999999,
     "xg_games": 5,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Croatia",
@@ -457,7 +457,7 @@
     "xg_against": 6.26,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Ghana",
@@ -467,7 +467,7 @@
     "xg_against": 4.48,
     "xg_games": 4,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   },
   {
     "team": "Panama",
@@ -477,6 +477,6 @@
     "xg_against": 4.17,
     "xg_games": 3,
     "source": "wc2026_dataset",
-    "scraped_at": "2026-07-07T03:59:10.769120+00:00"
+    "scraped_at": "2026-07-07T09:53:23.640032+00:00"
   }
 ]

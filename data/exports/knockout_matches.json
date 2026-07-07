@@ -18,7 +18,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 74,
@@ -39,7 +39,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 75,
@@ -60,7 +60,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 76,
@@ -81,7 +81,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 77,
@@ -102,7 +102,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 78,
@@ -123,7 +123,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 79,
@@ -144,7 +144,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 80,
@@ -165,7 +165,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 81,
@@ -186,7 +186,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 82,
@@ -207,7 +207,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 83,
@@ -228,7 +228,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 84,
@@ -249,7 +249,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 85,
@@ -270,7 +270,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 86,
@@ -291,7 +291,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 87,
@@ -312,7 +312,7 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 88,
@@ -333,7 +333,322 @@
     "away_from": null,
     "status": "played",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 89,
+    "round": "Round of 16",
+    "round_idx": 1,
+    "match_date": "2026-07-04",
+    "venue": "NRG Stadium , Houston",
+    "home_ref": "Canada",
+    "away_ref": "Morocco",
+    "home_team": "Canada",
+    "away_team": "Morocco",
+    "home_score": 0,
+    "away_score": 3,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": "Morocco",
+    "home_from": 73,
+    "away_from": 76,
+    "status": "played",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 90,
+    "round": "Round of 16",
+    "round_idx": 1,
+    "match_date": "2026-07-04",
+    "venue": "Lincoln Financial Field , Philadelphia",
+    "home_ref": "Paraguay",
+    "away_ref": "France",
+    "home_team": "Paraguay",
+    "away_team": "France",
+    "home_score": 0,
+    "away_score": 1,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": "France",
+    "home_from": 75,
+    "away_from": 78,
+    "status": "played",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 91,
+    "round": "Round of 16",
+    "round_idx": 1,
+    "match_date": "2026-07-05",
+    "venue": "MetLife Stadium , East Rutherford",
+    "home_ref": "Brazil",
+    "away_ref": "Norway",
+    "home_team": "Brazil",
+    "away_team": "Norway",
+    "home_score": 1,
+    "away_score": 2,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": "Norway",
+    "home_from": 74,
+    "away_from": 77,
+    "status": "played",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 92,
+    "round": "Round of 16",
+    "round_idx": 1,
+    "match_date": "2026-07-05",
+    "venue": "Estadio Azteca , Mexico City",
+    "home_ref": "Mexico",
+    "away_ref": "England",
+    "home_team": "Mexico",
+    "away_team": "England",
+    "home_score": 2,
+    "away_score": 3,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": "England",
+    "home_from": 79,
+    "away_from": 80,
+    "status": "played",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 93,
+    "round": "Round of 16",
+    "round_idx": 1,
+    "match_date": "2026-07-06",
+    "venue": "AT&T Stadium , Arlington",
+    "home_ref": "Portugal",
+    "away_ref": "Spain",
+    "home_team": "Portugal",
+    "away_team": "Spain",
+    "home_score": 0,
+    "away_score": 1,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": "Spain",
+    "home_from": 84,
+    "away_from": 83,
+    "status": "played",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 94,
+    "round": "Round of 16",
+    "round_idx": 1,
+    "match_date": "2026-07-06",
+    "venue": "Lumen Field , Seattle",
+    "home_ref": "United States",
+    "away_ref": "Belgium",
+    "home_team": "United States",
+    "away_team": "Belgium",
+    "home_score": 1,
+    "away_score": 4,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": "Belgium",
+    "home_from": 82,
+    "away_from": 81,
+    "status": "played",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 95,
+    "round": "Round of 16",
+    "round_idx": 1,
+    "match_date": "2026-07-07",
+    "venue": "Mercedes-Benz Stadium , Atlanta Referee: Fran\u00e7ois Letexier ( France )",
+    "home_ref": "Argentina",
+    "away_ref": "Egypt",
+    "home_team": "Argentina",
+    "away_team": "Egypt",
+    "home_score": null,
+    "away_score": null,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": null,
+    "home_from": 87,
+    "away_from": 86,
+    "status": "scheduled",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 96,
+    "round": "Round of 16",
+    "round_idx": 1,
+    "match_date": "2026-07-07",
+    "venue": "BC Place , Vancouver Referee: Iv\u00e1n Barton ( El Salvador )",
+    "home_ref": "Switzerland",
+    "away_ref": "Colombia",
+    "home_team": "Switzerland",
+    "away_team": "Colombia",
+    "home_score": null,
+    "away_score": null,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": null,
+    "home_from": 85,
+    "away_from": 88,
+    "status": "scheduled",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 97,
+    "round": "Quarterfinals",
+    "round_idx": 2,
+    "match_date": "2026-07-09",
+    "venue": "Gillette Stadium , Foxborough",
+    "home_ref": "France",
+    "away_ref": "Morocco",
+    "home_team": "France",
+    "away_team": "Morocco",
+    "home_score": null,
+    "away_score": null,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": null,
+    "home_from": 90,
+    "away_from": 89,
+    "status": "scheduled",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 98,
+    "round": "Quarterfinals",
+    "round_idx": 2,
+    "match_date": "2026-07-10",
+    "venue": "SoFi Stadium , Inglewood",
+    "home_ref": "Spain",
+    "away_ref": "Belgium",
+    "home_team": "Spain",
+    "away_team": "Belgium",
+    "home_score": null,
+    "away_score": null,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": null,
+    "home_from": 93,
+    "away_from": 94,
+    "status": "scheduled",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 99,
+    "round": "Quarterfinals",
+    "round_idx": 2,
+    "match_date": "2026-07-11",
+    "venue": "Hard Rock Stadium , Miami Gardens",
+    "home_ref": "Norway",
+    "away_ref": "England",
+    "home_team": "Norway",
+    "away_team": "England",
+    "home_score": null,
+    "away_score": null,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": null,
+    "home_from": 91,
+    "away_from": 92,
+    "status": "scheduled",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 100,
+    "round": "Quarterfinals",
+    "round_idx": 2,
+    "match_date": "2026-07-11",
+    "venue": "Arrowhead Stadium , Kansas City",
+    "home_ref": "Winner Match 95",
+    "away_ref": "Winner Match 96",
+    "home_team": null,
+    "away_team": null,
+    "home_score": null,
+    "away_score": null,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": null,
+    "home_from": 95,
+    "away_from": 96,
+    "status": "scheduled",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 101,
+    "round": "Semifinals",
+    "round_idx": 3,
+    "match_date": "2026-07-14",
+    "venue": "AT&T Stadium , Arlington",
+    "home_ref": "Winner Match 97",
+    "away_ref": "Winner Match 98",
+    "home_team": null,
+    "away_team": null,
+    "home_score": null,
+    "away_score": null,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": null,
+    "home_from": 97,
+    "away_from": 98,
+    "status": "scheduled",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 102,
+    "round": "Semifinals",
+    "round_idx": 3,
+    "match_date": "2026-07-15",
+    "venue": "Mercedes-Benz Stadium , Atlanta",
+    "home_ref": "Winner Match 99",
+    "away_ref": "Winner Match 100",
+    "home_team": null,
+    "away_team": null,
+    "home_score": null,
+    "away_score": null,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": null,
+    "home_from": 99,
+    "away_from": 100,
+    "status": "scheduled",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
+  },
+  {
+    "match_no": 103,
+    "round": "Match for third place",
+    "round_idx": 99,
+    "match_date": "2026-07-18",
+    "venue": "Hard Rock Stadium , Miami Gardens",
+    "home_ref": "Loser Match 101",
+    "away_ref": "Loser Match 102",
+    "home_team": null,
+    "away_team": null,
+    "home_score": null,
+    "away_score": null,
+    "home_pens": null,
+    "away_pens": null,
+    "winner": null,
+    "home_from": 101,
+    "away_from": 102,
+    "status": "scheduled",
+    "source": "wikipedia",
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   },
   {
     "match_no": 104,
@@ -354,6 +669,6 @@
     "away_from": 102,
     "status": "scheduled",
     "source": "wikipedia",
-    "scraped_at": "2026-07-07T03:59:09.262667+00:00"
+    "scraped_at": "2026-07-07T09:53:22.215501+00:00"
   }
 ]
