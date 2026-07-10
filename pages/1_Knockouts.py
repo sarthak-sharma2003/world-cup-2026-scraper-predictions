@@ -6,26 +6,19 @@ the model resolves level games via the ET/penalty 50/50 split.
 """
 from __future__ import annotations
 
-import json
 from collections import defaultdict
-from pathlib import Path
 
 import streamlit as st
 
+from app_data import load_json
 from src.knockout_model import current_match_probs, match_win_prob, simulate
 from src.model import compute_strengths
 
-ROOT = Path(__file__).resolve().parent.parent
-TEAMS = ROOT / "data" / "exports" / "team_stats.json"
-KO = ROOT / "data" / "exports" / "knockout_matches.json"
-MODEL_INPUTS = ROOT / "data" / "exports" / "model_inputs.json"
-
-
 def load_model_inputs():
     """Elo prior + xG form from the enrichment dataset, if present."""
-    if not MODEL_INPUTS.exists():
+    rows = load_json("model_inputs")
+    if not rows:
         return None, None
-    rows = json.loads(MODEL_INPUTS.read_text())
     elo = {r["team"]: r["elo"] for r in rows if r.get("elo")}
     xg = {
         r["team"]: {"for": r["xg_for"], "against": r["xg_against"], "games": r["xg_games"]}
@@ -65,15 +58,8 @@ def flag(team: str | None) -> str:
     return "".join(chr(0x1F1E6 + ord(c) - ord("A")) for c in code)
 
 
-@st.cache_data
-def load_data():
-    teams = json.loads(TEAMS.read_text())
-    ko = json.loads(KO.read_text())
-    return teams, ko
-
-
-@st.cache_data
-def compute(_teams, _ko):
+@st.cache_data(show_spinner=False)
+def compute(version, _teams, _ko):  # `version` (hashable) invalidates the cache when data changes
     elo, xg = load_model_inputs()
     strengths, avg = compute_strengths(_teams, elo=elo, xg=xg)
     sim = simulate(_ko, strengths, avg, n=20000)
@@ -81,12 +67,14 @@ def compute(_teams, _ko):
     return strengths, avg, sim, probs
 
 
-if not KO.exists():
-    st.error("No knockout data yet. Run `python -m src` first.")
+teams = load_json("team_stats")
+ko = load_json("knockout_matches")
+if not ko:
+    st.error("No knockout data available.")
     st.stop()
 
-teams, ko = load_data()
-strengths, league_avg, sim, cur_probs = compute(teams, ko)
+_version = max((m.get("scraped_at") or "" for m in ko), default="")
+strengths, league_avg, sim, cur_probs = compute(_version, teams, ko)
 by_no = {m["match_no"]: m for m in ko}
 champ = sim["champion"]
 

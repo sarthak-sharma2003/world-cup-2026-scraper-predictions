@@ -1,28 +1,24 @@
 """World Cup 2026 prediction dashboard (Streamlit).
 
 Run:  streamlit run dashboard.py
-Reads the committed scrape exports (data/exports/team_stats.json), so it shows
-whatever the last scheduled scrape produced.
+Loads the latest committed exports live from GitHub (see app_data.load_json), so
+the deployed app tracks the scheduled scrape within ~10 min without needing a
+Streamlit redeploy.
 """
 from __future__ import annotations
-
-import json
-from pathlib import Path
 
 import pandas as pd
 import streamlit as st
 
+from app_data import load_json
 from src.model import compute_strengths, predict
-
-EXPORT = Path(__file__).parent / "data" / "exports" / "team_stats.json"
-MODEL_INPUTS = Path(__file__).parent / "data" / "exports" / "model_inputs.json"
 
 
 def load_model_inputs():
     """Elo prior + xG form from the enrichment dataset, if present."""
-    if not MODEL_INPUTS.exists():
+    mrows = load_json("model_inputs")
+    if not mrows:
         return None, None
-    mrows = json.loads(MODEL_INPUTS.read_text())
     elo = {r["team"]: r["elo"] for r in mrows if r.get("elo")}
     xg = {
         r["team"]: {"for": r["xg_for"], "against": r["xg_against"], "games": r["xg_games"]}
@@ -34,11 +30,10 @@ def load_model_inputs():
 st.set_page_config(page_title="World Cup 2026 Predictions", page_icon="⚽", layout="wide")
 st.title("⚽ World Cup 2026 — Live Prediction Dashboard")
 
-if not EXPORT.exists():
-    st.error("No data yet. Run `python -m src` to scrape first.")
+rows = load_json("team_stats")
+if not rows:
+    st.error("No data available.")
     st.stop()
-
-rows = json.loads(EXPORT.read_text())
 df = pd.DataFrame(rows)
 df["points"] = df["wins"] * 3 + df["draws"]
 df["gd"] = df["goals_for"] - df["goals_against"]
