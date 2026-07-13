@@ -1,49 +1,49 @@
 id,team,canonical_team,games,wins,draws,losses,goals_for,goals_against,source,scraped_at
-1,Mexico,Mexico,5,4,0,1,10,3,wikipedia,2026-07-13T09:39:02.080310+00:00
-2,South Africa,South Africa,4,1,1,2,2,4,wikipedia,2026-07-13T09:39:02.080310+00:00
-3,South Korea,South Korea,3,1,0,2,2,3,wikipedia,2026-07-13T09:39:02.080310+00:00
-4,Czech Republic,Czech Republic,3,0,1,2,2,6,wikipedia,2026-07-13T09:39:02.080310+00:00
-5,Switzerland,Switzerland,6,3,2,1,10,6,wikipedia,2026-07-13T09:39:02.080310+00:00
-6,Canada,Canada,5,2,1,2,9,6,wikipedia,2026-07-13T09:39:02.080310+00:00
-7,Bosnia and Herzegovina,Bosnia,4,1,1,2,5,8,wikipedia,2026-07-13T09:39:02.080310+00:00
-8,Qatar,Qatar,3,0,1,2,2,10,wikipedia,2026-07-13T09:39:02.080310+00:00
-9,Brazil,Brazil,5,3,1,1,10,4,wikipedia,2026-07-13T09:39:02.080310+00:00
-10,Morocco,Morocco,6,3,2,1,10,6,wikipedia,2026-07-13T09:39:02.080310+00:00
-11,Scotland,Scotland,3,1,0,2,1,4,wikipedia,2026-07-13T09:39:02.080310+00:00
-12,Haiti,Haiti,3,0,0,3,2,8,wikipedia,2026-07-13T09:39:02.080310+00:00
-13,United States,United States,5,3,0,2,11,8,wikipedia,2026-07-13T09:39:02.080310+00:00
-14,Australia,Australia,4,1,2,1,3,3,wikipedia,2026-07-13T09:39:02.080310+00:00
-15,Paraguay,Paraguay,5,1,2,2,3,6,wikipedia,2026-07-13T09:39:02.080310+00:00
-16,Turkey,Turkey,3,1,0,2,3,5,wikipedia,2026-07-13T09:39:02.080310+00:00
-17,Germany,Germany,4,2,1,1,11,5,wikipedia,2026-07-13T09:39:02.080310+00:00
-18,Ivory Coast,Ivory Coast,4,2,0,2,5,4,wikipedia,2026-07-13T09:39:02.080310+00:00
-19,Ecuador,Ecuador,4,1,1,2,2,4,wikipedia,2026-07-13T09:39:02.080310+00:00
-20,Curaçao,Curaçao,3,0,1,2,1,9,wikipedia,2026-07-13T09:39:02.080310+00:00
-21,Netherlands,Netherlands,4,2,2,0,11,5,wikipedia,2026-07-13T09:39:02.080310+00:00
-22,Japan,Japan,4,1,2,1,8,5,wikipedia,2026-07-13T09:39:02.080310+00:00
-23,Sweden,Sweden,4,1,1,2,7,10,wikipedia,2026-07-13T09:39:02.080310+00:00
-24,Tunisia,Tunisia,3,0,0,3,2,12,wikipedia,2026-07-13T09:39:02.080310+00:00
-25,Belgium,Belgium,6,3,2,1,14,7,wikipedia,2026-07-13T09:39:02.080310+00:00
-26,Egypt,Egypt,5,1,3,1,8,7,wikipedia,2026-07-13T09:39:02.080310+00:00
-27,Iran,Iran,3,0,3,0,3,3,wikipedia,2026-07-13T09:39:02.080310+00:00
-28,New Zealand,New Zealand,3,0,1,2,4,10,wikipedia,2026-07-13T09:39:02.080310+00:00
-29,Spain,Spain,3,2,1,0,5,0,wikipedia,2026-07-13T09:39:02.080310+00:00
-30,Cape Verde,Cape Verde,4,0,3,1,4,5,wikipedia,2026-07-13T09:39:02.080310+00:00
-31,Uruguay,Uruguay,3,0,2,1,3,4,wikipedia,2026-07-13T09:39:02.080310+00:00
-32,Saudi Arabia,Saudi Arabia,3,0,2,1,1,5,wikipedia,2026-07-13T09:39:02.080310+00:00
-33,France,France,3,3,0,0,10,2,wikipedia,2026-07-13T09:39:02.080310+00:00
-34,Norway,Norway,6,4,0,2,13,11,wikipedia,2026-07-13T09:39:02.080310+00:00
-35,Senegal,Senegal,4,1,0,3,10,9,wikipedia,2026-07-13T09:39:02.080310+00:00
-36,Iraq,Iraq,3,0,0,3,1,12,wikipedia,2026-07-13T09:39:02.080310+00:00
-37,Argentina,Argentina,3,3,0,0,8,1,wikipedia,2026-07-13T09:39:02.080310+00:00
-38,Austria,Austria,4,1,1,2,6,9,wikipedia,2026-07-13T09:39:02.080310+00:00
-39,Algeria,Algeria,4,1,1,2,5,9,wikipedia,2026-07-13T09:39:02.080310+00:00
-40,Jordan,Jordan,3,0,0,3,3,8,wikipedia,2026-07-13T09:39:02.080310+00:00
-41,Colombia,Colombia,5,3,2,0,5,1,wikipedia,2026-07-13T09:39:02.080310+00:00
-42,Portugal,Portugal,5,2,2,1,8,3,wikipedia,2026-07-13T09:39:02.080310+00:00
-43,DR Congo,DR Congo,4,1,1,2,5,5,wikipedia,2026-07-13T09:39:02.080310+00:00
-44,Uzbekistan,Uzbekistan,3,0,0,3,2,11,wikipedia,2026-07-13T09:39:02.080310+00:00
-45,England,England,3,2,1,0,6,2,wikipedia,2026-07-13T09:39:02.080310+00:00
-46,Croatia,Croatia,4,2,0,2,6,7,wikipedia,2026-07-13T09:39:02.080310+00:00
-47,Ghana,Ghana,4,1,1,2,2,3,wikipedia,2026-07-13T09:39:02.080310+00:00
-48,Panama,Panama,3,0,0,3,0,4,wikipedia,2026-07-13T09:39:02.080310+00:00
+1,Mexico,Mexico,5,4,0,1,10,3,wikipedia,2026-07-13T14:48:54.472913+00:00
+2,South Africa,South Africa,4,1,1,2,2,4,wikipedia,2026-07-13T14:48:54.472913+00:00
+3,South Korea,South Korea,3,1,0,2,2,3,wikipedia,2026-07-13T14:48:54.472913+00:00
+4,Czech Republic,Czech Republic,3,0,1,2,2,6,wikipedia,2026-07-13T14:48:54.472913+00:00
+5,Switzerland,Switzerland,6,3,2,1,10,6,wikipedia,2026-07-13T14:48:54.472913+00:00
+6,Canada,Canada,5,2,1,2,9,6,wikipedia,2026-07-13T14:48:54.472913+00:00
+7,Bosnia and Herzegovina,Bosnia,4,1,1,2,5,8,wikipedia,2026-07-13T14:48:54.472913+00:00
+8,Qatar,Qatar,3,0,1,2,2,10,wikipedia,2026-07-13T14:48:54.472913+00:00
+9,Brazil,Brazil,5,3,1,1,10,4,wikipedia,2026-07-13T14:48:54.472913+00:00
+10,Morocco,Morocco,6,3,2,1,10,6,wikipedia,2026-07-13T14:48:54.472913+00:00
+11,Scotland,Scotland,3,1,0,2,1,4,wikipedia,2026-07-13T14:48:54.472913+00:00
+12,Haiti,Haiti,3,0,0,3,2,8,wikipedia,2026-07-13T14:48:54.472913+00:00
+13,United States,United States,5,3,0,2,11,8,wikipedia,2026-07-13T14:48:54.472913+00:00
+14,Australia,Australia,4,1,2,1,3,3,wikipedia,2026-07-13T14:48:54.472913+00:00
+15,Paraguay,Paraguay,5,1,2,2,3,6,wikipedia,2026-07-13T14:48:54.472913+00:00
+16,Turkey,Turkey,3,1,0,2,3,5,wikipedia,2026-07-13T14:48:54.472913+00:00
+17,Germany,Germany,4,2,1,1,11,5,wikipedia,2026-07-13T14:48:54.472913+00:00
+18,Ivory Coast,Ivory Coast,4,2,0,2,5,4,wikipedia,2026-07-13T14:48:54.472913+00:00
+19,Ecuador,Ecuador,4,1,1,2,2,4,wikipedia,2026-07-13T14:48:54.472913+00:00
+20,Curaçao,Curaçao,3,0,1,2,1,9,wikipedia,2026-07-13T14:48:54.472913+00:00
+21,Netherlands,Netherlands,4,2,2,0,11,5,wikipedia,2026-07-13T14:48:54.472913+00:00
+22,Japan,Japan,4,1,2,1,8,5,wikipedia,2026-07-13T14:48:54.472913+00:00
+23,Sweden,Sweden,4,1,1,2,7,10,wikipedia,2026-07-13T14:48:54.472913+00:00
+24,Tunisia,Tunisia,3,0,0,3,2,12,wikipedia,2026-07-13T14:48:54.472913+00:00
+25,Belgium,Belgium,6,3,2,1,14,7,wikipedia,2026-07-13T14:48:54.472913+00:00
+26,Egypt,Egypt,5,1,3,1,8,7,wikipedia,2026-07-13T14:48:54.472913+00:00
+27,Iran,Iran,3,0,3,0,3,3,wikipedia,2026-07-13T14:48:54.472913+00:00
+28,New Zealand,New Zealand,3,0,1,2,4,10,wikipedia,2026-07-13T14:48:54.472913+00:00
+29,Spain,Spain,3,2,1,0,5,0,wikipedia,2026-07-13T14:48:54.472913+00:00
+30,Cape Verde,Cape Verde,4,0,3,1,4,5,wikipedia,2026-07-13T14:48:54.472913+00:00
+31,Uruguay,Uruguay,3,0,2,1,3,4,wikipedia,2026-07-13T14:48:54.472913+00:00
+32,Saudi Arabia,Saudi Arabia,3,0,2,1,1,5,wikipedia,2026-07-13T14:48:54.472913+00:00
+33,France,France,3,3,0,0,10,2,wikipedia,2026-07-13T14:48:54.472913+00:00
+34,Norway,Norway,6,4,0,2,13,11,wikipedia,2026-07-13T14:48:54.472913+00:00
+35,Senegal,Senegal,4,1,0,3,10,9,wikipedia,2026-07-13T14:48:54.472913+00:00
+36,Iraq,Iraq,3,0,0,3,1,12,wikipedia,2026-07-13T14:48:54.472913+00:00
+37,Argentina,Argentina,3,3,0,0,8,1,wikipedia,2026-07-13T14:48:54.472913+00:00
+38,Austria,Austria,4,1,1,2,6,9,wikipedia,2026-07-13T14:48:54.472913+00:00
+39,Algeria,Algeria,4,1,1,2,5,9,wikipedia,2026-07-13T14:48:54.472913+00:00
+40,Jordan,Jordan,3,0,0,3,3,8,wikipedia,2026-07-13T14:48:54.472913+00:00
+41,Colombia,Colombia,5,3,2,0,5,1,wikipedia,2026-07-13T14:48:54.472913+00:00
+42,Portugal,Portugal,5,2,2,1,8,3,wikipedia,2026-07-13T14:48:54.472913+00:00
+43,DR Congo,DR Congo,4,1,1,2,5,5,wikipedia,2026-07-13T14:48:54.472913+00:00
+44,Uzbekistan,Uzbekistan,3,0,0,3,2,11,wikipedia,2026-07-13T14:48:54.472913+00:00
+45,England,England,3,2,1,0,6,2,wikipedia,2026-07-13T14:48:54.472913+00:00
+46,Croatia,Croatia,4,2,0,2,6,7,wikipedia,2026-07-13T14:48:54.472913+00:00
+47,Ghana,Ghana,4,1,1,2,2,3,wikipedia,2026-07-13T14:48:54.472913+00:00
+48,Panama,Panama,3,0,0,3,0,4,wikipedia,2026-07-13T14:48:54.472913+00:00
